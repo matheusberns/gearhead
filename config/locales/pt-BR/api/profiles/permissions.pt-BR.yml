@@ -1,0 +1,6 @@
+pt-BR:
+  api:
+    profiles:
+      permissions:
+        create:
+          success: Permissôes adicionadas ao perfil com sucesso!

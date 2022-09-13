@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# Arquivo inicializador de dados
+
+::User.find_or_initialize_by(email: 'admin@gearhead.com.br').tap do |user|
+  user.name = 'Administrador'
+  user.last_name = 'Gearhead'
+  user.nickname = 'Admin'
+  user.birthday = '2022-09-13'
+  user.cellphone = '47992853827'
+  user.cpf = '10281506957'
+  user.password = DEFAULT_PW
+  user.password_confirmation = DEFAULT_PW
+  user.is_admin = true
+  user.active = true
+  user.deleted_at = nil
+  user.save!
+end

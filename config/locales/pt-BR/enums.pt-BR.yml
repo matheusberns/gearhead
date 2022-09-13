@@ -1,0 +1,445 @@
+pt-BR:
+  enumerations:
+    activity_origin_types:
+      customer_contact: Contato com cliente
+      proposal: Proposta
+      report_loss: Informar perda
+      delegate_responsible: Delegar responsável
+      conclude_trade: Conclusão do Negócio
+      responsible_contact_sample: Contato com responsável pelo card de amostra
+      responsible_contact_technical_area: Contato com responsável pelo card de área técnica
+      responsible_contact_financial: Contato com responsável pelo card de financeiro
+      responsible_contact_commercial: Contato com responsável pelo card de gestão de vendas
+      to_distributor: Encaminhar para o distribuidor
+      rd_conversion: Conversão RD
+    inbound_origin:
+      mql: MQL
+      sal: SAL
+    outbound_origin:
+      suspect: Suspect
+      prospect: Prospect
+    inbound_activity_types:
+      customer_contact: Contato com cliente
+      proposal: Proposta
+      report_loss: Informar perda
+      delegate_responsible: Delegar responsável
+      send_to_trades: Gerar oportunidade
+    outbound_activity_types:
+      customer_contact: Contato com cliente
+      proposal: Proposta
+      report_loss: Informar perda
+      delegate_responsible: Delegar responsável
+      send_to_trades: Gerar oportunidade
+    activity_type:
+      phone_contact: Contato telefônico
+      mail: E-mail
+      visit: Visita
+      meeting_or_skype: Reunião/Skype
+      proposal: Proposta
+      request_service: Solicitar Serviços
+      report_loss: Informar perda
+    bonus_types:
+      trade_agreement: Acordo comercial
+      stock_correction: Correção de estoque
+      quality: Qualidade
+    cron_status:
+      waiting: Em espera
+      executing: Executando
+      error: Erro
+      warning: Aviso
+    cod_rtr_types:
+      all: Todos
+      simples: Simples Nacional
+      nacional: Simples Nacional - excesso de sublimite de receita bruta
+      normal: Regime Normal
+    commercial_activity_types:
+      delegate_responsible: Delegar responsável
+    commercial_types:
+      reclamation: Reclamação
+      search_and_development: Pesquisa e Desenvolvimento
+      communication_action: Ação de Comunicação
+      sales_campaign: Campanha de Vendas
+      sales_planning: Planejamento de Vendas
+      request_documents: Solicitação de documentos para gestão de vendas
+    commercial_subtypes:
+      logistics: Logística
+      financial: Financeiro
+      commercial_attendance: Atendimento Comercial
+      product_quality: Qualidade de Produto
+    commercial_activities_type:
+      delegate_responsible: Delegar responsável
+      customer_contact: Contato com cliente
+    conclude_types:
+      to_distributor: Compra via distribuidor
+      inform_loss: Informar perda
+    customer_origin_types:
+      facebook: Facebook
+      linkedin: Linkedin
+      instagram: Instagram
+      google: Google
+      email_mkt: Email Marketing
+      prospect: Prospecção
+      magazine_and_posts: Revistas e publicações
+      others: Outros
+    customer_service_types:
+      reclamation: Reclamação
+      communication_action: Ação de Comunicação
+      sales_campaign: Campanha de Vendas
+      request_documents: Solicitação de documentos para gestão de vendas
+      credit_analysis: Análise de Crédito
+      customer_group_analysis: Análise de Grupo de cliente
+      technical_visit: Visita técnica
+      technical_question: Dúvida técnica
+      training: Treinamento
+      financial_request_documents: Solicitação de documentos para financeiro
+    customer_types:
+      general: Geral
+      distributor: Distribuidor
+      final_customer: Consumidor final
+    contract_status:
+      active: Ativo
+      in_progress: Em progresso
+      expired: Vencido
+      done: Concluído
+      cancel: Cancelado
+    company_type:
+      client: Cliente
+      subsidiary: Filial
+    contact_type:
+      ppe_indication: Indicação EPI
+      suggestions_and_doubts: Dúvidas e Sugestões
+      app_support: Dúvidas e Sugestões
+      want_full_access: Quero acesso total
+    customer_contact_types:
+      email: E-mail
+      phone: Telefone
+      meeting: Reunião
+      visit: Visita
+    origin_types:
+      rapt: RAPT
+      rd: RD Station
+    disapproval_reason_types:
+      resistance: Resistência
+      price: Preço
+      not_meet_customer_needs: Não atende as necessidades do cliente
+      others: Outros
+    deferment_types:
+      one_hour: Daqui 1 hora
+      three_hours: Daqui 3 horas
+      tomorrow: Para amanhã
+      two_days: Daqui 2 dias
+      next_week: Próxima semana
+      next_month: Próximo mês
+    email_types:
+      marketing: Marketing
+      opportunity: Oportunidade
+    file_types:
+      registration_form: Ficha cadastral
+      business_references: Referências comerciais
+      social_contract: Contrato social
+      cnpj_card: Cartão CNPJ
+      balance_sheet_dre: Balanço Patrimonial / DRE
+      billing_relationship: Relação de faturamento
+      tickets_with_proof_of_payment: Boletos com comprovante de pagamento
+      vendor_invoices: Notas fiscais de fornecedores
+      sintegra: Sintegra
+      observation: Observação
+    financial_types:
+      credit_analysis: Análise de Crédito
+      customer_group_analysis: Análise de Grupo de cliente
+      document_solicitation: Solicitação de documentos para financeiro
+    financial_activity_types:
+      approved: Aprovado
+      disapproved: Negado
+      delegate_responsible: Delegar responsável
+      missing_document: Documento faltante
+      description_solicitation: Descrição solicitação
+      manual_approved: Gerar pedido para análise de crédito
+      send_document: Envio de documento
+      contact_responsible: Contato com responsável
+      responsible_contact_from_trade: Contato com responsável do financeiro
+    financial_status_types:
+      approved: Aprovado
+      disapproved: Negado
+      manual_approved: Gerar pedido para análise de crédito
+    freight_types:
+      cif: CIF
+      fob: FOB
+      cif_redispatch: CIF Redespacho
+    historic_types:
+      new_task: Nova tarefa
+      new_email: Novo E-mail
+      new_annotation: Nova anotação
+      new_proposal: Nova proposta
+      new_activity: Nova atividade
+      change_task: Alteração tarefa
+      change_annotation: Alteração anotação
+      change_activity: Alteração atividade
+    historic_marketing_types:
+      email: Email
+      sample: Amostra
+      communication_action: Ação de comunicação
+      sale_campaign: Campanha de vendas
+      development: Pesquisa e desenvolvimento
+      reclamation: Reclamação
+      training: Treinamento
+    goal_types:
+      general: Geral
+      single: Individual
+      group: Grupo
+    group_types:
+      customer: Cliente
+      portifolio: Carteira
+      user: Usuário
+      representative: Representante
+      product: Produto
+    invoice_types:
+      out: Saída
+      input: Entrada
+    log_types:
+      create: Adicionado
+      update: Editado
+      return: Retorno sincronização
+      warning: Aviso
+    loss_types:
+      closed_with_another: Fechou com outro
+      payment_form: Forma de pagamento
+      credit_limit: Limite de crédito
+      already_a_customer: Já é cliente
+      price: Preço
+      product_miss: Falta de produto
+      without_contact_with_seller: Não consegue contato/ Sem retorno
+      icp: Lead fora do perfil de cliente ideal (ICP)
+      another: Outro
+    marketing_bonus_types:
+      selling_campaign: Campanha de vendas
+      communication_action: Comunicação de ação
+    kanban_types:
+      sales_funnel: Funil de Vendas
+      commercial: Comercial
+      samples: Amostras
+      financial: Financeiro
+      technical_area: Área Técnica
+      outbound: Outbound
+    number_types:
+      cellphone: Celular
+      phone: Telefone
+    order_status:
+      not_closed: Não fechado
+      open_total_blocked: Aberto total / Bloqueado
+      open_total_blocked_fin_ignored: Aberto total / Bloqueado / Fin / Ignorado
+      open_total_blocked_fin_not_analyzed: Aberto total / Bloqueado / Fin / Não Analisado
+      open_total_locked_fin_disapproved: Aberto total / Bloqueado / Fin / Reprovado
+      open_total_blocked_ven_ignored: Aberto total / Bloqueado / Ven / Ignorado
+      open_total_blocked_ven_not_analyzed: Aberto total / Bloqueado / Ven / Não Analisado
+      open_total_locked_ven_disapproved: Aberto total / Bloqueado / Ven / Reprovado
+      open_total_released_scheduled: Aberto total / Liberado / Programado
+      opened_total_released_unscheduled: Aberto total / Liberado / Não Programado
+      canceled: Cancelado
+      in_preparation_and_analysis: Em Preparação e Análise
+      in_preparation_and_analysis_beginning_separation: Em Preparação e Análise / Início Separação
+      in_preparation_and_analysis_fin_separation: Em Preparação e Análise / Fim Separação
+      in_preparation_and_analysis_collection: Em Preparação e Análise / Coleta
+      partial_open: Aberto Parcial
+      liquidated: Liquidado
+      release_collection: Liberação Coleta
+      waiting_for_wms_locked: Aguardando WMS / Bloqueado
+      waiting_for_wms_locked_fin_ignored: Aguardando WMS / Bloqueado / Fin / Ignorado
+      waiting_for_wms_locked_fin_not_analyzed: Aguardando WMS / Bloqueado / Fin / Não Analisado
+      waiting_for_wms_locked_fin_failed: Aguardando WMS / Bloqueado / Fin / Reprovado
+      waiting_for_wms_blocked_ven_ignored: Aguardando WMS / Bloqueado / Ven / Ignorado
+      waiting_for_wms_locked_ven_not_analyzed: Aguardando WMS / Bloqueado / Ven / Não Analisado
+      waiting_for_wms_locked_ven_disapproved: Aguardando WMS / Bloqueado / Ven / Reprovado
+      waiting_for_wms_released_scheduled: Aguardando WMS / Liberado / Programado
+      waiting_for_wms_released_unscheduled: Aguardando WMS / Liberado / Não Programado
+      request_not_found: Pedido não encontrado
+      with_error: Erro de envio
+    order_dash_situations:
+      not_closed: Não Fechado
+      financial: Financeiro
+      sales_approval: Aprovação de vendas
+      out_of_stock: Sem estoque
+      logistics: Logística
+      liquidated: Liquidado
+      canceled: Cancelado
+    order_queue_status:
+      pending: Pendente
+      synchronize: Sincronizado
+      synchronizing: Sincronizando
+      refused: Recusado
+      erp: ERP indisponível
+      canceled: Cancelado
+    order_queue_notification_status:
+      pending: Pendente
+      synchronize: Sincronizado
+      synchronizing: Sincronizando
+      refused: Recusado
+      warning: Aviso
+      erp: ERP indisponível
+    order_situations:
+      total_open: Aberto Total
+      partial_open: Aberto Parcial
+      suspended: Suspenso
+      liquidated: Liquidado
+      withdrawal: Desistência
+      waiting_wms_integration: Aguardando Integração WMS
+      in_transmission: Em Transmissão
+      preparation_analysis_nf: Preparação Análise ou NF
+      not_closed: Não Fechado
+    priority_types:
+      urgent: Urgente
+      average: Média
+      low: Baixa
+    permission_module:
+      sales_funnel: Funil de vendas
+      sales_management: Gestão de vendas
+      financial: Financeiro
+      technical_area: Área técnica
+      sample: Amostra
+      customers: Clientes
+      customers_overview: Visão geral dos clientes
+      orders: Pedidos
+      orders_queue: Fila de pedidos
+      contracts: Contratos
+      service_recovery: Service recovery
+      reports: Relatórios
+      products: Lista (Produtos)
+      derivations: Derivações
+      waiting_list: Lista de espera
+      groups: Grupos
+      representatives: Representantes
+      holidays: Feriados
+      crons: Crons
+      users: Acesso (Usuários)
+      goals: Metas
+      profile: Perfis
+      dashboard: Dashboard
+      month_closures: Período de vigência
+      services: Serviços
+      block_list: Lista de bloqueios
+      schedule: Agenda
+      user_config: Configuração de usuário
+      outbound: Outbound
+      inbound: Inbound
+      checklist: Check list
+      loss_reason: Motivos de perda
+    reason_types:
+      technical_visit: Visita técnica
+      technical_question: Dúvida técnica
+      training: Treinamento
+    record_types:
+      attachment: Anexo
+      obsersation: Observação
+    sample_activities_types:
+      approved: Aprovar (gerar pedido)
+      disapproved: Reprovar
+      schedule_return_of_tests: Agendar retorno para cobrar teste
+      test_feedback: Feedback de teste
+      customer_contact: Contato com cliente
+      delegate_responsible: Delegar Responsável
+      responsible_contact_from_trade: Contato com responsável da amostra
+    sample_types:
+      sample_90109: Amostra - 90109
+      donation: Doação
+      bonus_90103: Bonificação Qualidade e Acordo - 90103
+      bonus_90108: Bonificação Ações de Marketing - 90108
+    sample_subtypes:
+      showcase: Mostruário
+      customer_test: Teste do cliente
+    sample_stage_types:
+      open_solicitation: Solicitação em aberto
+      under_analysis: Em análise
+      send: Enviado
+      testing: Testando
+      test_result: Resultado do teste
+      disapproved: Reprovada
+    service_types:
+      sample: Amostra
+      reclamation: Reclamação
+      communication_action: Ação de Comunicação
+      sales_campaign: Campanha de Vendas
+      request_documents: Solicitação de documentos para gestão de vendas
+      credit_analysis: Análise de Crédito
+      customer_group_analysis: Análise de Grupo de cliente
+      technical_visit: Visita técnica
+      technical_question: Dúvida técnica
+      training: Treinamento
+      financial_request_documents: Solicitação de documentos para financeiro
+    sit_nfe_types:
+      typed: Digitada
+      closed: Fechada
+      canceled: Cancelada
+      document_issued: Documento Fiscal Emitido (saída)
+      awaiting_closing: Aguardando Fechamento (pós-saída)
+    situation_items:
+      available: Disponível
+      without_stock: Sem estoque
+      waiting: Aguardando
+      blocked: Bloqueado
+    shipping_types:
+      mail: Correios
+      carrier: Transportadora
+    table_types:
+      customer_type: Cliente
+      contract: Contrato
+    technical_area_activity_types:
+      delegate_responsible: Delegar Responsável
+      customer_contact: Contato com cliente
+      schedule_visit: Agendar visita
+      responsible_contact_from_trade: Contato com responsável da área técnica
+    technical_visit_types:
+      initial: Inicial
+      preventive_schedulled: Preventiva/Agendada
+      corrective: Corretiva
+      reactivation: Reativação
+    tip_mer_types:
+      internal: Interno
+      external: Externo
+      prospect: Prospect
+    tip_cli_types:
+      legal: Pessoa Jurídica
+      person: Pessoa Física
+    trade:
+      in_progress: Em progresso
+      win: Ganho
+      loss: Perda
+    training_types:
+      hand_protection: Proteção das mãos
+      eyes_protection: Proteção dos olhos
+      body_protection: Proteção do corpo
+      food_protection: Proteção alimentar
+      others: Outros
+    training_who_types:
+      technical_teams: Equipes técnicas
+      sales_teams: Equipes de vendas
+      final_users: Usuários finais
+      students: Estudantes
+    trade_origin:
+      rd: RD Station
+      prospect: Prospect
+      pre_order: Pré-pedido
+      customer_portal: Portal do cliente
+    trade_origin_new:
+      prospect: Prospect
+      pre_order: Pré-pedido
+    trade_result_types:
+      in_progress: Em progresso
+      win: Ganho
+      loss: Perda
+      other: Outros
+      distributor: Via distribuidor
+    trade_stage:
+      lead: Lead
+      qualified_lead: Lead qualificado
+      customer: Cliente
+    tip_com_types:
+      customer: Cliente
+      supplier: Fornecedor
+      customer_supplier: Cliente/Fornecedor
+    task_types:
+      call: Ligação
+      email: Email
+      meeting: Reunião
+      visit: Visita
+      task: Tarefa
+      other: Outros

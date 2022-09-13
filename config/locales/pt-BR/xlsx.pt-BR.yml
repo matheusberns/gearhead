@@ -1,0 +1,40 @@
+pt-BR:
+  xlsx:
+    orders:
+      id: Pedido
+      num_ped: Número
+      customer_nom_cli: Cliente
+      representative_name: Representante
+      purchase_order: OC Cliente
+      dat_emi: Data
+      vlr_fin: Valor
+      vlr_liq: Valor Líq.
+      payment_condition_des_cpg: Condições de pagamento
+      sit_ped: Situação
+      tns_pro: Transação
+      order_erp_id: Origem
+    customers:
+      cod_crm: Código CRM
+      cod_erp: Código ERP
+      nom_cli: Razão Social
+      ape_cli: Nome Fantasia
+      group_customer: Grupo de cliente
+      phone: Telefone
+      cgc_cpf: CPF/CNPJ
+      representative_code: Cód. Rep.
+      representative_name: Representante
+      table_price: Tabela de preço
+      segment: Segmento
+      uf: UF
+      city: Cidade
+      created_at: Criado em
+      status: Situação
+    goals:
+      goal_name: Nome
+      goal_type: Tipo
+      owner_name: Representante
+      participant_name: Compartilhado
+      month_closure: Período de vigência
+      value: Valor
+      representative_cod_rep: Cód. Rep.
+      participant_cod_rep: Cód. Comp.

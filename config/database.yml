@@ -1,11 +1,11 @@
 default: &default
-  host: localhost
+  host: 10.1.1.11
   adapter: postgresql
   encoding: unicode
-  user: gearhead_base
+  user: postgres
   pool: 10
   timeout: 5000
-  password: gearhead_base
+  password: p0stgr3s
 
 development:
   <<: *default

@@ -1,0 +1,1200 @@
+pt-BR:
+  attributes:
+    name: Nome
+    code: Código
+    email: E-mail
+    description: Descrição
+    status: Status
+    picture: Foto
+    number: Número
+    motive: Motivo
+    observation: Observação
+    created_at: Cadastrado em
+    created_by: Cadastrado por
+    created_by_id: Cadastrado por
+    updated_at: Atualizado em
+    updated_by: Atualizado por
+    updated_by_id: Atualizado por
+    deleted_at: Removido em
+  activerecord:
+    models:
+      activity:
+        one: &activity Atividade
+        other: &activities Atividades
+      billing:
+        one: &billing Faturamento
+        other: &billings Faturamentos
+      branch:
+        one: &branch Filial
+        other: &branches Filiais
+      branch_historic:
+        one: &branch_historic Histórico de Filial
+        other: &branch_historic Historicos de Filiais
+      carrier:
+        one: &carrier Transportadora
+        other: &carrier Transportadoras
+      commercial:
+        one: &commercial Gestão de venda
+        other: &commercials Gestão de vendas
+      commercial_activity:
+        one: *activity
+        other: *activities
+      company:
+        one: &company Empresa
+        other: &companies Empresa
+      company_transaction:
+        one: &company_transaction Transação
+        other: &company_transactions Transações
+      contact:
+        one: &contact Contato
+        other: &contacts Contatos
+      contract:
+        one: &contract Contrato
+        other: &contracts Contratos
+      contract_order:
+        one: &contract_order Pedido do contrato
+        other: &contract_orders Pedidos do contrato
+      contract_product:
+        one: &contract_product Produto do contrato
+        other: &contract_products Produtos do contrato
+      customer/address_customer:
+        one: &address_customer Endereço do cliente
+        other: &address_customers Endereços do cliente
+      customer/customer:
+        one: &customer Cliente
+        other: &customers Clientes
+      customer/user_customer:
+        one: &user_customer Usuário por cliente
+        other: &user_customers Usuários por cliente
+      customer_portifolio:
+        one: &customer_portifolio Carteira de cliente
+        other: &customer_portifolios Carteiras de cliente
+      customer_contract:
+        one: &customer_contract Cliente Contrato
+        other: &customer_contracts Clientes Contratos
+      customer_group_contract:
+        one: &customer_contract Grupo do Cliente e Contrato
+        other: &customer_contracts Grupos dos Clientes e Contratos
+      customer_group:
+        one: &customer_group Grupo de Clientes
+        other: &customer_groups Grupos de Clientes
+      credit_limit_historic:
+        one: Histórico de limite de crédito
+        other: Históricos de limite de crédito
+      email:
+        one: &email Email
+        other: &emails Emails
+      family:
+        one: &family Família
+        other: &families Famílias
+      financial:
+        one: &financial Financeiro
+        other: &financials Financeiros
+      financial_activity:
+        one: &financial_activity Tipo de Financeiro
+        other: &financial_activities Tipos de Financeiros
+      goal:
+        one: &goal Meta
+        other: &goals Metas
+      goal_customer:
+        one: &goal_customer Cliente da meta
+        other: &goal_customer Clientes da meta
+      group:
+        one: &group Grupo
+        other: &groups Grupos
+      group_customer:
+        one: &group_customer Grupo de cliente
+        other: &group_customers Grupo de clientes
+      group_portifolio:
+        one: &group_portifolio Carteira por grupo
+        other: &group_portifolios Carteiras por grupo
+      group_user:
+        one: &group_user Grupo de Usuário
+        other: &group_users Grupos de Usuário
+      historic:
+        one: &historic Histórico
+        other: &historics Históricos
+      historic_marketing:
+        one: &historic_marketing Histórico Marketing
+        other: &historic_marketings Históricos Marketing
+      holiday:
+        one: &holiday Feriado
+        other: &holidays Feriados
+      integration:
+        one: &integration Integração
+        other: &integrationS Integrações
+      invoice_item:
+        one: &invoice_item Nota Fiscal Item
+        other: &invoice_items Nota Fiscal Itens
+      invoice:
+        one: &invoice Nota Fiscal
+        other: &invoices Nota Fiscais
+      kanban:
+        one: &kanban Kanban
+        other: &kanbans Kanbans
+      kanban_stage:
+        one: &kanban_stage Etapa do Kanban
+        other: &kanban_stages Etapas do Kanban
+      measure_unit:
+        one: &measure_unit Unidade de Medida
+        other: &measure_units Unidade de Medidas
+      message:
+        one: &message Mensagem
+        other: &messages Mensagens
+      month_closure:
+        one: &month_closure Período de vigência
+        other: &month_closure Períodos de vigência
+      order:
+        one: &order Pedido
+        other: &orders Pedidos
+      order_observation:
+        one: &order_observation Observação do pedido
+        other: &order_observations Observações do pedido
+      order_item:
+        one: &order_item Item do pedido
+        other: &order_items Itens do pedido
+      origin:
+        one: &origin Origem
+        other: &origin Origens
+      notification:
+        one: &notification Notificação
+        other: &notifications Notificações
+      participant:
+        one: &participant Participante
+        other: &participants Participantes
+      payment_condition:
+        one: &payment_condition Condição de Pagamento
+        other: &payment_conditions Condições de Pagamento
+      payment_form:
+        one: &payment_form Forma de Pagamento
+        other: &payment_forms Formas de Pagamento
+      permission:
+        one: &permission Permissão
+        other: &permissions Permissões
+      product:
+        one: &product Produto
+        other: &products Produtos
+      product_attachment:
+        one: &product_attachment Foto do produto
+        other: &product_attachments Fotos do produto
+      product_derivation:
+        one: &product_derivation Derivação de Produto
+        other: &product_derivations Derivação de Produtos
+      price:
+        one: &price Preço
+        other: &prices Preços
+      price_general_dataset:
+        one: &price_general_dataset Preço Dados Gerais
+        other: &price_general_datasets Preços Dados Gerais
+      product_group:
+        one: &product_group Agrupamento de produtos
+        other: &product_groups Agrupamentos de produtos
+      profile:
+        one: &profile Perfil
+        other: &profiles Perfis
+      profile_permission:
+        one: &profile_permission Permissão
+        other: &profile_permissions Permissões
+      price_table:
+        one: &price_table Tabela
+        other: &price_tables Tabelas
+      portifolio:
+        one: &portifolio Carteira
+        other: &portifolios Carteiras
+      representative:
+        one: &representative Representante
+        other: &representatives Representantes
+      sample:
+        one: &sample Amostra
+        other: &samples Amostras
+      sample_activity:
+        one: &sample_activity Atividade de amostra
+        other: &sample_activities Atividades de amostra
+      sample_product:
+        one: &sample_product Produto da Amostra
+        other: &sample_products Produtos da Amostra
+      segment:
+        one: &segment Segmento
+        other: &segments Segmentos
+      service_recovery:
+        one: &service_recovery Avaliação de qualidade
+        other: &service_recovery Avaliações de qualidade
+      solicitation:
+        one: &solicitation Solicitação
+        other: &solicitations Solicitações
+      representative_area:
+        one: &representative_area Representante por área
+        other: &representative_area Representante por área
+      representative_group:
+        one: &representative_group Representante x Grupo
+        other: &representative_groups Representantes x Grupos
+      representative_portifolio:
+        one: &representative_portifolio Representante por carteira
+        other: &representative_portifolios Representantes por carteira
+      technicalarea:
+        one: &technicalarea Área Técnica
+        other: &technicalareas Áreas Técnicas
+      technical_area:
+        one: &technical_area Área Técnica
+        other: &technical_areas Áreas Técnicas
+      technical_area_activity:
+        one: &technical_area_activity Área Técnica Atividade
+        other: &technical_area_activities Áreas Técnica Atividades
+      tax_classification:
+        one: &tax_classification Classificação Fiscal
+        other: &tax_classifications Classifição Fiscais
+      trade:
+        one: &trade Negócio
+        other: &trades Negócios
+      trade_tracker:
+        one: &trade_tracker Acompanhante do negócio
+        other: &trade_trackers Acompanhantes do negócio
+      trade_item:
+        one: &trade_item Item do negócio
+        other: &trade_items Itens do negócios
+      transporter:
+        one: &transporter Transportador
+        other: &transporters Transportadores
+      inbound:
+        one: &inbound Inbound
+        other: &inbounds Inbounds
+      outbound:
+        one: &outbound Outbound
+        other: &outbounds Outbounds
+      user_representative:
+        one: &user_representative Usuário por representante
+        other: &user_representative Usuário por representante
+      user:
+        one: &user Usuário
+        other: &users Usuários
+      validity:
+        one: &validity Validade
+        other: &validities Validades
+      waiting_product:
+        one: &waiting_product Produto em espera
+        other: &waiting_products Produtos em espera
+    attributes:
+      activity:
+        activity_type: Tipo de atividade
+        description: Descrição
+        activity_date: Data de atividade
+        trade: *trade
+        trade_id: *trade
+        responsible: Responsável
+        responsible_id: Responsável
+        scheduling_attendance: Agendar atendimento
+      billing:
+        cod_emp: Código Empresa
+        cod_fil: Código Filial
+        num_tit: Número do Título
+      branch:
+        cod_emp: Código Empresa
+        cod_fil: Código Filial
+        nom_fil: Nome Filial
+      branch_historic:
+        cod_emp: Código Empresa
+        cod_fil: Código Filial
+        cod_cli: Código Cliente
+        dat_lim: Data Limite
+        vlr_lim: Valor Limite
+        lim_apr: Limite Aprovador
+        cod_tpr: Código Tabela de Preço Padrão
+        cod_cpg: Código Condição de Pagamento
+        cod_tra: Código Transportadora Padrão
+      carrier:
+        has_delivery_instruction: Possui instrução de entrega
+        delivery_forecast: Previsão de entrega
+        cubed_weight: Peso cubado
+        weight: Peso
+        customer_value: Valor do cliente
+        value: Valor
+        delivery_days: Dias para entrega
+        knowledge_type: Tipo conhecimento
+        cnpj: CNPJ
+        modal: Modal
+        name: Nome
+        status: Status
+        table_price: Tabela
+        customer_schedule: Prazo cliente
+      commercial:
+        commercial_type: Tipo
+        commercial_subtype: Subtipo
+        description: Descrição
+        representative: *representative
+        representative_id: *representative
+        responsible: Responsável
+        responsible_id: Responsável
+        customer: Cliente
+        customer_id: *customer
+        status_date: Data do status
+      commercial_activity:
+        scheduling_attendance: Agendar atendimento
+        commercial_activity_type: Tipo de atividade comercial
+        description: Descrição
+        activity_date: Data da atividade
+        schedulle_date: Data do agendamento
+        schedulle_hours: Hora
+        responsible: Responsável
+        responsible_id: Responsável
+        commercial: Comercial
+        commercial_id: Comercial
+        customer_contact_type: Tipo de contato com o cliente
+      contact:
+        customer: *customer
+        customer_id: *customer
+      contract:
+        total_contracts: Total de Contratos
+        deadline_month: Tem limite em Meses
+        volume: Volume
+        start_date: Data Inicial
+        end_date: Data Final
+        invoice_percentage: Porcentagem Faturado
+      contract_order:
+        order: *order
+        order_id: *order
+        contract: *contract
+        contract_id: *contract
+      contract_product:
+        cod_emp: Empresa
+        cod_pro: Produto
+        contract: *contract
+        contract_id: *contract
+      company:
+        cod_emp: Código da Empresa
+        nom_emp: Nome da Empresa
+      company_transaction:
+        cod_emp: Código da Empresa
+        cod_tns: Código da Transação
+      customer_portifolio:
+        customer: *customer
+        customer_id: *customer
+        portifolio: *portifolio
+        portifolio_id: *portifolio
+      customer_group:
+        customer: *customer
+        customer_id: *customer
+        group: *group
+        group_id: *group
+        cod_gre: Código do Grupo de Empresa
+        nom_gre: Nome do grupo de empresa
+        sig_gre: Sigla do grupo de empresa
+        cnp_rai: CNPJ Raiz
+      customer_contract:
+        customer: *customer
+        customer_id: *customer
+        contract: *contract
+        contract_id: *contract
+      customer_group_contract:
+        customer_group: *customer_group
+        customer_group_id: *customer_group
+        contract: *contract
+        contract_id: *contract
+      customer/user_customer:
+        customer: *customer
+        customer_id: *customer
+        user: *user
+        user_id: *user
+      customer/customer:
+        cod_cli: Código cliente
+        nom_cli: Nome Cliente
+        ape_cli: Apelido Cliente
+        tip_mer: Tipo Mercado
+        tip_cli: Tipo Cliente
+        cgc_cpf: Cpf/CNPJ
+        cli_con: Indicativo se o cliente é contribuinte de ICMS
+        ins_est: Inscrição Estadual
+        ins_mun: Inscrição Municipal
+        fon_cli: Telefone 1
+        fon_cl2: Telefone 2
+        cxa_pst: Caixa Posta
+        ema_nfe: Email NFE
+        cep_cli: Cep
+        end_cli: Endereço Cliente
+        nen_cli: Numero
+        cpl_end: Complemento
+        bai_cli: Bairro
+        cid_cli: Cidade
+        sig_ufs: Estado
+        end_ent: Endereço Entrega
+        nen_ent: Numero Entrega
+        cpl_ent: Complemento Entrega
+        cep_ent: Cep Entrega
+        bai_ent: Bairro Entrega
+        cid_ent: Cidade Entrega
+        est_ent: Estado Entrega
+        ins_ent: Inscrição Estadual Entrega
+        cgc_ent: Cpf/Cnpj Entrega
+        blo_cre: ??
+        sit_cli: Situação Cliente
+        cod_rtr: Código do Regime Tributário
+        nat_ret: Indicador de natureza da retenção na fonte de PIS e Cofins
+        cep_ini: Cep Inicial
+        fit_score: Interesse
+        cli_for: Cliente Fornecedor
+        active: Ativo
+      customer/address_customer:
+        end_ent: Endereço Entrega
+        nen_ent: Numero Entrega
+        cpl_ent: Complemento Entrega
+        cep_ent: Cep Entrega
+        bai_ent: Bairro Entrega
+        cid_ent: Cidade Entrega
+        est_ent: Estado Entrega
+        customer: *customer
+        customer_id: *customer
+      credit_limit_historic:
+        customer: *customer
+        customer_id: *customer
+        new_limit: Limite novo
+        old_limit: Limite antigo
+      email:
+        topic: Assunto
+        body_email: Corpo do email
+        send_to: Enviado para
+        send_date: Data de envio
+        created_at: Data de criação
+        updated_at: Data de alteração
+        send_by: Enviado por
+        created_by_id: Criado por
+        customer_id: Cliente
+      family:
+        cod_emp: Código da Empresa
+        cod_fam: Código da Familia
+        des_fam: Descrição da Familia
+        cod_ori: Código Origem
+      financial:
+        amount: Valor
+        date_financial: Data
+        description: Descrição
+        financial_age: Tempo do status
+        representative_id: *representative
+        representative: *representative
+        responsible_id: Responsável
+        responsible: Responsável ID
+        customer_id: *customer
+        customer: *customer
+      financial_activity:
+        description: Descrição
+        financial_activity_type: Tipo de atividade do Financeiro
+        responsible_id: Responsável
+        responsible: Responsável ID
+        financial_id: *financial
+        financial: *financial
+        trade: *trade
+        trade_id: *trade
+      goal:
+        goal_type: Tipo
+        owner_id: Responsável
+        owner: Responsável
+        participant_id: Participante
+        participant: Participante
+        group_id: *group
+        group: *group
+      goal_customer:
+        customer: *customer
+        customer_id: *customer
+        goal: *goal
+        goal_id: *goal
+      group_customer:
+        cli_bas: Cliente base
+        cnp_rai: CNPJ raiz
+        cod_gre: Código grupo
+        nom_gre: Nome grupo
+        sig_gre: Sigla grupo
+      group_portifolio:
+        group: *group
+        group_id: *group
+        portifolio: *portifolio
+        portifolio_id: *portifolio
+      group_user:
+        user_id: *user
+        user: *user
+        group: *group
+        grou_id: *group
+      historic:
+        description: Descrição
+        reason: Motivo
+      historic_marketing:
+        commercial_subtype: Subtipo gestão de vendas
+        representative: *representative
+        representative_id: *representative
+        responsible: Responsável
+        responsible_id: Responsável
+        customer: Cliente
+        customer_id: *customer
+        status_date: Data do status
+        commercial_type: Tipo gestão de vendas
+        description: Descrição
+        created_at: Data de criação
+        updated_at: Data de alteração
+        created_by_id: Criado por
+        updated_by_id: Alterado por
+      holiday:
+        holiday_date: Data
+        name: Nome
+        recurrent: Recorrente
+      invoice_item:
+        cod_cli: Código Cliente
+        cod_rep: Código Representante
+        num_nfv: Numero Nota Saida
+        num_nfc: Numero Nota Entrada
+        num_ped: Numero do Pedido
+        seq_ipd: Sequencial do Pedido
+        vlr_fin: Valor
+        sit_nfe: Situação da Nota
+        cod_tpr: Código Tabela de preço
+        cod_pro: Código do Produto
+        cod_der: Código Derivação
+        invoice_type: Tipo da Nota
+        cod_emp: Código da Empresa
+        cod_fil: Código da Filial
+        customer_id: *customer
+        customer: *customer
+        order_id: *order
+        order: *order
+        representative_id: *representative
+        representative: *representative
+      invoice:
+        cod_emp: Código Empresa
+        cod_fil: Código Filial
+        cod_cli: Código Cliente
+        cod_rep: Código Representante
+        cod_red: Código Redespacho
+        cod_tra: Código Trasnportadora
+        cod_fpg: Código Forma de Pagamento
+        cod_cpg: Código Condição de Pagamento
+        num_nfv: Número Nota Fiscal Saída
+        num_nfc: Número Nota Fiscal Entrada
+        vlr_fin: Valor
+        sit_nfe: Situação da Nota
+        invoice_type: Tipo da Nota
+      payment_form:
+        cod_emp: Código Empresa
+        cod_fpg: Código Forma de Pagamento
+        des_fpg: Descrição da Forma de Pagamento
+        abr_fpg: Abreviação da Forma de Pagamento
+      kanban_stage:
+        sequence: Sequencial
+        validity: Validade
+      order:
+        cod_emp: Código empresa
+        cod_pro: Código produto
+        des_pro: Descrição produto
+        cpl_pro: Complemento produto
+        des_nfv: Descrição nota fiscal
+        cod_fam: Código familia
+        cod_ori: Código origem
+        uni_med: Unidade de medida
+        cod_agc: Código de agrupamento de produtos para comercial
+        uni_me2: Unidade de medida 2
+        vlr_ipi: Valor IPI
+        vlr_fin: Valor válido para o financeiro
+        vlr_icm: Valor ICMS
+        obs_ped: Observação do pedido
+        tns_pro: Tipo de transação
+        cod_tra: Código da transportadora
+        purchase_order: Ordem de compra
+        billing_date: Data de faturamento
+        cod_cpg: Condição de pagamento
+        cod_fpg: Forma de pagamento
+        cep_to_ent: CEP
+        per_dsc: Desconto (%)
+        cod_red: Código do redespacho
+        cod_rep: Código do representante
+        dat_emi: Data da emissão
+        cif_fob: Tipo de frete
+        som_fre: Somar frete ?
+        som_fre_boolean: Somar frete
+        observation: Observação NF
+        sit_ped: Situação do pedido
+        receipt_date: Data de recebimento
+        carrier_observation: Transportador
+        freight_type: Tipo de frete
+        usu_obsped: Observação interna
+        pre_uni: Preço unitário
+        vlr_without_ipi: Valor sem IPI
+        vlr_with_dsc: Valor sem desconto
+        seq_pcl: Sequência do item
+        situation_item: Situação do item
+        qtd_ped: Situação do item
+      order_item:
+        cod_emp: Empresa
+        cod_fil: Filial
+        num_ped: Número pedido
+        seq_ipd: Sequência
+        cod_tns: Código TNS
+        cod_pro: Produto
+        cod_der: Derivação
+        qtd_ped: Quantidade
+        dat_ent: Data entrega
+        vlr_ics: Valor ICMS
+        vlr_fin: Valor total
+        per_ipi: Percentual IPI
+        vlr_ipi: Valor IPI
+        per_icm: Percentual ICMS
+        vlr_icm: Valor ICMS
+        ped_cli: Ordem de compra
+        seq_pcl: Sequência do item
+        cod_tpr: Tabela de preço
+        per_dsc: Desconto (%)
+        tns_pro: Tipo de transação
+        pre_uni: Valor unitário
+        sit_ped: Situação do pedido
+        purchase_order: Ordem de compra
+      order_observation:
+        obs_ped: Observação do pedido
+        cod_emp: Codigo da Empresa
+        cod_fil: Codigo da Filial
+        num_ped: Numero do pedido
+        obs_dat: Data da Observação
+        obs_hor: Hora da observação
+        obs_usu: Usuário da obserção
+        seq_obs: Sequencial
+      origin:
+        cod_emp: Código Empresa
+        cod_ori: Código Origem
+        des_ori: Descrição Origem
+      notification:
+        seen: Visto
+        description: Descrição
+      participant:
+        goal_id: *goal
+        goal: *goal
+        group_id: *group
+        group: *group
+        representative_id: *representative
+        representative: *representative
+        customer_id: *customer
+        customer: *customer
+        portifolio_id: *portifolio
+        portifolio: *portifolio
+        user_id: *user
+        user: *user
+      payment_condition:
+        cod_emp: Código Empresa
+        cod_cpg: Código Condição de Pagamento
+        des_cpg: Descrição da Condição de Pagamento
+        abr_cpg: Abreviação
+        apl_cpg: Aplicação da condição de pagamento
+        name: Nome
+        discount: Desconto
+        active: Ativo/Inativo
+        description: Descrição
+        value: Valor
+      permission:
+        name: Nome
+        code: Código
+        module: Módulo
+      price:
+        cod_emp: Código Empresa
+        cod_tpr: Código Preço Geral
+        dat_ini: Data Início
+        cod_pro: Código Produto
+        cod_der: Código Produto Derivação
+        qtd_max: Quantidade Máxima
+        pre_bas: Quantidade Minima
+        per_dsc: Percentual de Desconto
+        per_lim: Percentual Limite
+        tol_mai: Total Máximo
+        tol_min: Total Mínimo
+        sit_reg: Situação do Regime
+        vlt_mai: Valor Máximo
+        per_com: Percentual de Comissão
+      price_general_dataset:
+        cod_emp: Código Empresa
+        cod_tpr: Código Preço Geral
+        abr_tpr: Abreviação
+        sit_reg: Situação Regime
+      price_table:
+        acr_fin: Percentual de acréscimo financeiro para produtos com tabela de preço no módulo de vendas
+        cod_emp: Código da empresa
+        cod_tpr: Código da tabela de preço
+        cpr_dsc: Percentual a acrescentar ou diminuir para formação do preço de compra
+        dat_fim: Data Final da validade da tabela de preço
+        dat_ini: Data início da validade da tabela de preço
+        dat_rea: Data do reajuste processado sobre a tabela
+        ind_exp: Indicativo se o registro foi alterado para exportar para o palm
+        min_rea: Valor Mínimo de Reajuste
+        per_com: Percentual a acrescentar ou diminuir à comissão dos representantes
+        per_dsc: Percentual de desconto a ser concedido
+        per_rea: Percentual do último reajuste processado sobre a tabela
+      product:
+        link: Link
+        ca: CA
+        cod_emp: Código Empresa
+        cod_pro: Código produto
+        des_pro: Descrição produto
+        cpl_pro: Complemento produto
+        des_nfv: Descrição NFE
+        cod_fam: Código Familia
+        cod_ori: Código Origem
+        uni_med: Unidade de medida
+        cod_agc: Código AGC
+        uni_me2: Unidade de medida 2
+      product_attachment:
+        title: Título
+        text: Texto
+        cod_emp: Código Empresa
+        cod_pro: Código Produto
+        cod_der: Código Derivação
+        use_as_default: Usar como Padrão
+      product_group:
+        cod_emp: Código Empresa
+        cod_agp: Código Agrupamento de Produtos
+        des_agp: Descrição Agrupamento de Produtos
+        abr_agp: Abreviação Agrupamento de Produtos
+        pes_bru: Peso Bruto
+        pes_liq: Peso Liquido
+      product_derivation:
+        cod_emp: Código Empresa
+        cod_bar: Código de Barras
+        vlr_cn2: Valor da Conversão de unidade de medida 2
+        cod_pro: Código Produto
+        cod_der: Código Derivação
+        des_der: Descrição Derivação
+        des_cpl: Descrição CPL
+        tip_cn2: Tipo Conversão de unidade de medida 2
+      profile:
+        name: Nome
+      profile_permission:
+        profile_id: *profile
+        permission_id: *permission
+      measure_unit:
+        uni_med: Unidade de Medida
+        des_med: Descrição
+        uni_fis: Unidade Fiscal
+      message:
+        description: Unidade de Medida
+        created_by: *user
+        created_by_id: *user
+        messageable_id: ID do relacionamento
+        messageable_type: Tipo do relacionamento
+      month_closure:
+        month_year: Mês/Ano
+        start_date: Data inicial
+        end_date: Data final
+      note:
+        annotation: Anotação
+      representative_group:
+        group: *group
+        group_id: *group
+        representative: *representative
+        representative_id: *representative
+        leader: Líder
+        manager: Gerente
+      representative_portifolio:
+        portifolio: *portifolio
+        portifolio_id: *portifolio
+        representative: *representative
+        representative_id: *representative
+      sample:
+        sample_type: Tipo de solicitação
+        sample_subtype: Tipo de amostra
+        bonus_type: Tipo de bonificação
+        send_to_client_address: Enviar para endereço do cliente?
+        street: Rua
+        number: Número
+        neighborhood: Bairro
+        cep: CEP
+        uf: UF
+        city: Cidade
+        complement: Complemento
+        reason: Motivo
+        prospect_buying: Qual a perspectiva de compra?
+        average_company_employees: Média de funcionários da empresa
+        approved_disapproved: Aprovado/Reprovado
+        has_order: Tem pedido?
+        brand_customer_use: Cliente usa qual marca?
+        payment_condition: Condição de pagamento
+        freight: Frete
+        status_date: Data do status
+        representative: *representative
+        representative_id: *representative
+        responsible: Responsável
+        responsible_id: Responsável
+        customer: *customer
+        customer_id: *customer
+        shipping_type: Tipo de envio
+      sample_activity:
+        sample_activity_type: Tipo de atividade
+        customer_contact_type: Tipo de contato
+        scheduled_return: Data de retorno
+        scheduled_hours: Hora de retorno
+        order_realized: Pedido realizado
+        disapproval_reason_type: Motivo da rejeição
+        disapproval_reason_other: Motivo da rejeição (outro)
+        sample_disapproved: Amostra reprovada
+        commentary: Comentário
+        sample_id: *sample
+        sample: *sample
+      sample_product:
+        sample: *sample
+        sample_id: *sample
+        cod_emp: Código da empresa
+        cod_pro: Código do produto
+        cod_der: Código da Derivação do produto
+        qtd_pro: Quantidade do produto
+      segment:
+        cod_ram: Código do Ramo
+        des_ram: Descrição do Ramo
+      service_recovery:
+        quality_delivery: Qualidade da Entrega
+        quality_attendance: Qualidade do Atendimento
+        quality_product: Qualidade do Produto
+        quality_average: Média da qualidade
+        quality_delivery_description: Descrição da qualidade da entrega
+        quality_attendance_description: Descrição da qualidade do atendimento
+        quality_product_description: Descrição da qualidade do produto
+        customer: *customer
+        customer_id: *customer
+        order: *order
+        order_id: *order
+        responsible: Responsável
+        responsible_id: Responsável
+      task:
+        topic: Tópico
+        task_type: Tipo de tarefa
+        responsible: Responsável
+        description: Descrição
+        start_date: Data inicial
+        end_date: Data final
+        pending: Pendente
+        customer_id: *customer
+        customer: *customer
+      tax_classification:
+        name: Descrição
+        cod_clf: Código da Classificação Fiscal
+      technical_area:
+        url_link: Link
+        description: Descrição
+        technical_question_description: Descrição visita técnica
+        priority_start_date: Data inicial da prioridade
+        status_date: Data do Status
+        reason_type: Motivo
+        technical_visit_type: Tipo de visita técnica
+        training_type: Tipo de treinamento
+        training_who: Treinamento destinado para
+        priority_type: Prioridade
+        responsible: Responsável
+        responsible_id: Responsável
+        customer: *customer
+        customer_id: *customer
+        age: Idade
+        return_at: Tempo de retorno
+      technical_area_activity:
+        technical_area_activity_type: Tipo de atividades da área tecnica
+        customer_contact_type: Tipo de contato com o cliente
+        description: Descrição
+        deadline: Data limite
+        visit_date: Data da Visita
+        visit_hours: Hora da Visita
+      trade:
+        origin: Origem
+        stage: Estado
+        trade_age: Idade
+        potential_value: Potencial de valor
+        description: Descrição
+        closing_forecast: Previsão de fechamento
+        billing_date: Data da cobrança
+        payment_term: Forma de pagamento
+        minimal_order_value: Pedido minimo
+        deadline: Prazo de entrega
+        freight: Frete
+      trade_tracker:
+        trade: *trade
+        trade_id: *trade
+        responsible: *user
+        responsible_id: *user
+        notified: *user
+        notified_id: *user
+      trade_item:
+        trade: *trade
+        trade_id: *trade
+        cod_emp: Empresa
+        cod_fil: Filial
+        cod_tns: Código TNS
+        cod_pro: Produto
+        cod_der: Derivação
+        qtd_ped: Quantidade
+        dat_ent: Data entrega
+        vlr_ics: Valor ICMS
+        vlr_fin: Valor válido para o financeiro
+        per_ipi: Percentual IPI
+        vlr_ipi: Valor IPI
+        per_icm: Percentual ICMS
+        vlr_icm: Valor ICMS
+        ped_cli: Número do pedido do cliente
+        seq_pcl: Sequência do item no pedido do cliente
+        cod_tpr: Código da tabela de preço do produto do pedido
+        per_dsc: Percentual de desconto
+        tns_pro: Transação do item de produto do pedido
+        pre_uni: Preço unitário do produto do pedido
+        sit_ped: Situação do pedido
+      transporter:
+        ape_tra: Apelido Transportadora
+        bai_tra: Bairro da Transportadora
+        cep_tra: Cep da Transportadora
+        cgc_cpf: CPF/CNPJ
+        cid_tra: Cidade da Transportadora
+        cif_fob: Tipo do frete
+        cod_tra: Código da Transportadora
+        cod_via: Código da Via
+        cpl_end: Complemento
+        cxa_pst: Caixa Postas
+        end_tra: Endereço da Transportadora
+        fon_tra: Telefone
+        ins_est: Inscrição Estadual
+        ins_mun: Inscrição Municipal
+        int_net: Site
+        nen_tra: Numero da Transportadora
+        nom_tra: Nome da Transportadora
+        pes_max: Peso Maximo
+        pla_vei: Placa do Veículo
+        sig_ufs: Sigla do Estado
+        sit_tra: Sigla da transportadora
+        tip_tra: Tipo da transportadora
+        tra_for: TraFor
+        vol_max: Volume Máximo
+      user_representative:
+        user: *user
+        user_id: *user
+        representative: *representative
+        representative_id: *representative
+      validity:
+        cod_emp: Código Empresa
+        cod_tpr: Código Preço
+        dat_ini: Data Inicial
+        dat_fim: Data Final
+        usa_qtd: Quantidade
+        tol_mai: Preço a maior
+        tol_men: Preço a menor
+        per_dsc: Percentual de Desconto a ser concedido
+        sit_reg: Situação do Regime
+      waiting_product:
+        cod_emp: Código Empresa
+        cod_pro: Código Produto
+        cod_der: Código Derivação
+        observation: Observação
+        prediction: Previsão
+        without_prediction: Sem previsão
+    errors:
+      models:
+        action:
+          attributes:
+            base:
+        activity:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        inbound_activity:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        outbound_activity:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        attachment:
+          attributes:
+            base:
+              only_one_warning: "Não é possível cadastrar mais de uma observação de aviso para o mesmo cliente"
+        contract:
+          attributes:
+            base:
+              empty_representative_and_group: "Não é possível ter um contrato sem um representante ou grupo de representante selecionado"
+              empty_customer_and_group: "Não é possível ter um contrato sem um cliente ou grupo de clientes selecionado"
+        contract_product:
+          attributes:
+            base:
+              uniquess_of_contract: "Esse produto e derivação já foram adicionados"
+        commercial:
+          attributes:
+            base:
+              description_nil: "Descrição não pode ficar em branco"
+              blank_commercial_subtype: "Ao informar uma reclamação o subtipo é obrigatório"
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              already_has_service: "Já existe um serviço de '%{commercial_type}' em andamento"
+        commercial_activity:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        customer/customer:
+          attributes:
+            base:
+              cnpj_cpf: "CPF/CNPJ inválido"
+              uniquess_of_cnpj: "Já foi cadastrado cliente com esse CNPJ"
+              uniquess_of_cpf: "Já foi cadastrado cliente com esse CPF"
+              another_portifolio_cpf: "CPF informado pertence a outra carteira e não pode ser criado cadastrado novamente. Entre em contato com seu gestor"
+              another_portifolio_cnpj: "CNPJ informado pertence a outra carteira e não pode ser criado cadastrado novamente. Entre em contato com seu gestor"
+              another_portifolio_cpf_cnpj: "CPF/CNPJ informado foi encontrado em outra carteira. Entre em contato com seu gestor"
+              email_mandatory: "Email é obrigatório"
+        financial:
+          attributes:
+            base:
+              already_has_service: "Já existe um serviço de '%{financial_type}' em andamento"
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+        financial_activity:
+          attributes:
+            base:
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        goal:
+          attributes:
+            start_date:
+              period_invalid: "Já existe uma meta cadastra nesse período com essas configurações"
+            end_date:
+              end_date_after_start_date: "Data final não pode ser maior que data de início"
+            participant_id:
+              not_be_equal_owner: "Não pose ser igual a Responsável"
+        invoice:
+          attributes:
+            base:
+              integration_failure: 'Sem acesso ao ERP, consulte o suporte!'
+        month_closure:
+          attributes:
+            end_date:
+              conflict_period: "Data informada está conflitando em outro período de vigência"
+              invalid_period: "Data final não pode ser menor que a data de início"
+            start_date:
+              conflict_period: "Data informada está conflitando em outro período de vigência"
+        order:
+          attributes:
+            base:
+              minimun_value: "Não é possível gerar pedidos com valor inferior a R$750,00"
+              not_calculate_freight: "Frete deve ser calculado antes de salvar o pedido"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              editing_not_allowed: "Edição de pedido não permitida"
+              erp_timeout: "ERP indisponível"
+              order_sample_not_editing_allow: "Pedido de amostra não pode ser alterado"
+        order_item:
+          attributes:
+            base:
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              multiple_quantity: "Este item aceita somente valores múltiplos para sua quantidade, informe: '%{example}'"
+              cod_tpr_is_mandatory: "Tabela de preço deve ser selecionada"
+              qtd_ped_is_mandatory: "Quantidade do item não pode ser 0"
+              value_pre_bas: "O preço informado e menor que o preço mínimo para o produto e derivação"
+              order_sample_not_editing_allow: "Pedido de amostra não pode ser alterado"
+        order_product:
+          attributes:
+            base:
+              uniquess_of_order: "Esse produto e derivação já foram adicionados"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+        order_queue:
+          attributes:
+            base:
+              order_queue_status_invalid_to_cancel: "Não é permitido cancelar um pedido com status diferente de Pendente/ERP indisponível"
+              order_queue_status_invalid_to_send: "Não é permitido enviar um pedido manualmente com status diferente de Pendente/ERP indisponível ou que teve menos de 10 tentativas de sincronização automática"
+        representative_portifolio:
+          attributes:
+            base:
+              uniquess_of_record: "Não é possível associar a mesma carteira ao mesmo representante mais de uma vez"
+        sample:
+          attributes:
+            base:
+              already_has_service: "Já existe um serviço de amostra em andamento"
+              can_request_sample: "Você não tem permissão para solicitar amostra, entre em contato com o Administrador do sistema."
+              customer_sample_in_progress: "Não é possível cadastrar uma nova amostra porque o cliente já possui a amostra número: '%{sample_id}' em progresso"
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+        sample_activity:
+          attributes:
+            base:
+              one_must_be_chosen: "Ao registrar o feedback de uma amostra, você deve informar se a mesma foi reprovada ou teve um pedido gerado"
+              valid_scheduled: "Data deve ser maior ao dia de hoje."
+              sample_activity_type_not_allowed: "Não é permitido criar atividade '%{activity}' na etapa '%{kanban_stage}' ."
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+              area_without_service: "Não é possível contatar o responsável do card sem antes haver um serviço para esta área"
+        group_user:
+          attributes:
+            base:
+              uniqueness_of_user: "Usuário já vinculado ao grupo"
+        service_recovery:
+          attributes:
+            base:
+              has_at_least_one_filled: "Ao menos um dos critérios da pesquisa de qualidade deve ser preenchido"
+        solicitation:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+        trade:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              invalid_original_order: "Número do pedido informando não pertence ao cliente do negócio ou não existe. Favor verificar"
+        trade_item:
+          attributes:
+            base:
+              uniquess_of_trade: "Esse produto e derivação já foram adicionados"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              value_pre_bas: "O preço informado e menor que o preço mínimo para o produto e derivação"
+              multiple_quantity: "Este item aceita somente valores múltiplos para sua quantidade, informe: '%{example}'"
+        inbound_item:
+          attributes:
+            base:
+              uniquess_of_trade: "Esse produto e derivação já foram adicionados"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              value_pre_bas: "O preço informado e menor que o preço mínimo para o produto e derivação"
+              multiple_quantity: "Este item aceita somente valores múltiplos para sua quantidade, informe: '%{example}'"
+        outbound:
+          attributes:
+            base:
+              incomplete_checklist: "Existem itens do checklist não feitos"
+        inbound:
+          attributes:
+            base:
+              incomplete_checklist: "Existem itens do checklist não feitos"
+        outbound_item:
+          attributes:
+            base:
+              uniquess_of_trade: "Esse produto e derivação já foram adicionados"
+              invalid_per_dsc: "Desconto não pode passar de 4%"
+              negative_per_dsc: "Desconto não pode ser negativo"
+              invalid_payment_form: "O desconto é concedido apenas para forma de pagamento a vista"
+              value_pre_bas: "O preço informado e menor que o preço mínimo para o produto e derivação"
+              multiple_quantity: "Este item aceita somente valores múltiplos para sua quantidade, informe: '%{example}'"
+        technical_area:
+          attributes:
+            base:
+              already_has_service: "Já existe um serviço de '%{reason_type}' em andamento"
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+        technical_area_activity:
+          attributes:
+            base:
+              is_final_stage: "Em uma etapa final, a solicitação não pode mais sofrer alterações"
+              delegate_responsible_to_self: "O responsável selecionado já é o responsável do card"
+        user:
+          attributes:
+            password:
+              invalid_case_format: "Você precisa informar ao menos uma letra maiúscula e minúscula"
+              invalid_number_format: "Você precisa informar ao menos um número"
+              invalid_special_character: "Você precisa informar ao menos um caractere especial"
+        participant:
+          attributes:
+            base:
+              validate_participant: "Não é possível adicionar mais de um participante por registro!"
+        waiting_product:
+          attributes:
+            base:
+              uniquess_of_record: "Não é possível adicionar a mesma derivação na lista mais de uma vez"

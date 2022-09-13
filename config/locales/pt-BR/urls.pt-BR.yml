@@ -1,0 +1,8 @@
+pt-BR:
+  urls:
+    call: "https://img.freepik.com/free-icon/auricular-phone_318-1028.jpg?w=740&t=st=1657284594~exp=1657285194~hmac=396d3fe2576a33614541762a02edd81bb7045e105c47d3b8e57e5c7ac50897ec"
+    email: "https://img.freepik.com/free-icon/sent-email_318-10100.jpg?t=st=1657284654~exp=1657285254~hmac=b4f3a0fd34024bf0a254ea7459925bc3d5b025e19ba89da84d1eb96039ac881f&w=740"
+    meeting: "https://img.freepik.com/free-icon/group-meeting_318-10037.jpg?t=st=1657284675~exp=1657285275~hmac=4adac803f0197020ec89d30c4f66bfcb52c823179e610377ba339df3ef981445&w=740"
+    visit: "https://cdn-icons-png.flaticon.com/512/1201/1201282.png?w=740"
+    task: "https://cdn-icons-png.flaticon.com/512/1237/1237964.png?w=740"
+    other: "https://cdn-icons-png.flaticon.com/512/1250/1250981.png?w=740"

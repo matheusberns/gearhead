@@ -12,17 +12,29 @@ gem "sprockets-rails"
 # Use PostgreSQL as the database for Active Record
 gem 'pg'
 
+gem 'active_model_serializers'
+
 # Use Devise as session controller
+gem 'devise'
 gem 'devise_token_auth'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+
+# Enumerations for Ruby with some magic powers!
+gem 'enumerate_it'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
+
+# This gem does some CPF/CNPJ magic. It allows you to create, validate and format CPF/CNPJ, even through the command-line
+gem 'cpf_cnpj'
+
+# Activesupport
+gem 'activesupport'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
