@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/activerecord.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/auth.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/caxlsx.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/devise.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/devise_token_auth.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/contact_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/currency_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/group_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/layout_space_bar_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/permission_module_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/poll_status_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/solicitation_status_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/space_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/token_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/web_service_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/enumerations/widget_type_enum.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/errors.pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/pt-BR.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/sessions.pt-BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/activerecord.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/api/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/api/actitivities.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/api/profiles/permissions.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/csv.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/enums.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/urls.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR/xlsx.pt-BR.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +55,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Matheus/Documents/gearhead/app/assets",
+    "last_opened_file_path": "C:/Users/Matheus/Documents/gearhead/config/locales",
     "ruby.rails.projectView.checked": "true",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matheus\Documents\gearhead\config\locales" />
       <recent name="C:\Users\Matheus\Documents\gearhead\app\assets" />
     </key>
   </component>
@@ -122,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663108570007</updated>
-      <workItem from="1663108574146" duration="7704000" />
+      <workItem from="1663108574146" duration="8697000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -173,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663118790485</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adicionado pastas necessárias">
+      <created>1663119240715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663119240715</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

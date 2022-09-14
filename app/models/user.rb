@@ -89,6 +89,10 @@ class User < ApplicationRecord
 
   validate :cpf_valid
 
+  def administrator?
+    is_admin
+  end
+
   protected
 
   def password_required?

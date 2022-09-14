@@ -1,0 +1,11 @@
+pt-BR:
+  enumerations:
+    widget_type_enum:
+      chat: Chat
+      attendance: Atendimentos
+      birthdays: Aniversários
+      menus: Cardápios
+      visitors: Visitantes
+      people: Pessoas
+      dollar: Dolar
+      categories: Categorias

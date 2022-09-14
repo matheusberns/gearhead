@@ -1,0 +1,4 @@
+pt-BR:
+  enumerations:
+    permission_module_type_enum:
+      post: Publicações

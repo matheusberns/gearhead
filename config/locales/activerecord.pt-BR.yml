@@ -1,0 +1,796 @@
+pt-BR:
+  activerecord:
+    models:
+      account:
+        one: &account Conta
+        other: &accounts Contas
+      account_tool:
+        one: &account_tool Conta/Ferramenta
+        other: &account_tools Conta/Ferramentas
+      city:
+        one: &city Cidades
+        other: &cities Cidades
+      contact:
+        one: &contact Contato
+        other: &contacts Contatos
+      comment:
+        one: &comment Comentário
+        other: &comments Comentários
+      currency_quotation:
+        one: &currency_quotation Cotação de moeda
+        other: &currency_quotation Cotações de moeda
+      birthday_card:
+        one: &birthday_card Cartão de aniversário
+        other: &birthday_cards Cartões de aniversário
+      department:
+        one: &department Departamento
+        other: &departments Departamentos
+      dish:
+        one: &dish Prato
+        other: &dishes Pratos
+      emergency_contact:
+        one: &emergency_contact Contato de emergência
+        other: &emergency_contacts Contatos de emergência
+      group:
+        one: &group Grupo
+        other: &groups Grupos
+      group_permission:
+        one: &group_permission Grupo/Permissão
+        other: &group_permissions Grupos/Permissões
+      integration:
+        one: &integration Integração
+        other: &integrations Integrações
+      license_plate:
+        one: &license_plate Placa do veículo
+        other: &license_plates Placas dos veículos
+      like:
+        one: &like Curtida
+        other: &likes Curtidas
+      meal:
+        one: &meal Refeição
+        other: &meals Refeições
+      meal_rating:
+        one: &meal_rating Avaliação da refeição
+        other: &meal_ratings Avaliações das refeições
+      meal_plan:
+        one: &meal_plan Cardápio
+        other: &meal_plans Cardápios
+      meal_plan_headquarter:
+        one: &meal_plan_headquarter Cardápio/Unidade
+        other: &meal_plan_headquarters Cardápios/Unidades
+      meal_dish:
+        one: &meal_dish Refeição/Prato
+        other: &meal_dishes Refeições/Pratos
+      notification:
+        one: &notification Notificação
+        other: &notifications Notificações
+      notification_token:
+        one: &notification_token Token de notificação
+        other: &notification_tokens Tokens de notificação
+      poll:
+        one: &poll Enquete
+        other: &polls Enquetes
+      poll_option:
+        one: &poll_option Opção da enquete
+        other: &poll_options Opções da enquete
+      post:
+        one: &post Publicação
+        other: &posts Publicações
+      permission:
+        one: &permission Permissão
+        other: &permissions Permissões
+      state:
+        one: &state Estado
+        other: &states Estados
+      shift:
+        one: &shift Turno
+        other: &shifts Turnos
+      space:
+        one: &space Espaço
+        other: &spaces Espaços
+      space_group:
+        one: &space_group Espaço/Grupo
+        other: &space_groups Espaços/Grupos
+      space_tool:
+        one: &space_tool Espaço/Ferramenta
+        other: &space_tools Espaços/Ferramentas
+      space_widget:
+        one: &space_widget Espaço/Widget
+        other: &space_widgets Espaços/Widgets
+      tool:
+        one: &tool Ferramenta
+        other: &tools Ferramentas
+      use_term:
+        one: &use_term Termo de uso
+        other: &use_terms Termos de uso
+      user:
+        one: &user Usuário
+        other: &users Usuários
+      user_use_term:
+        one: &user_use_term Usuário/Termo de uso
+        other: &user_use_terms Usuário/Termos de uso
+      user_group:
+        one: &user_group Usuário/Grupo
+        other: &user_groups Usuarios/Grupos
+      headquarter:
+        one: &headquarter Unidade
+        other: &headquarters Unidades
+      web_service:
+        one: &web_service Web service
+        other: &web_services Web services
+      web_service_report:
+        one: &web_service_report Relatório de web service
+        other: &web_service_reports Relatórios de web service
+      widget:
+        one: &widget Widget
+        other: &widgets widgets
+    attributes:
+      account:
+        name: Nome
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        smtp_user: Usuário SMTP
+        smtp_password: Senha SMTP
+        smtp_host: Host SMTP
+        smtp_email: E-mail SMTP
+        users_timeout: Deslogar usuários
+        timeout_in: Deslogar usuários em
+        imap_host: Host IMAP
+        imap_port: Porta IMAP
+        imap_user: Usuário IMAP
+        imap_password: Senha IMAP
+        imap_execution_max_time: Tempo máximo para recebimento do documento
+        imap_execution_interval_time: Intervalo de tempo entre capturas no e-mail (em minutos)
+        uuid: UUID
+      account_tool:
+        tool: *tool
+        tool_id: *tool
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+      city:
+        name: Nome
+        state_id: *state
+        state: *state
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      contact:
+        name: Nome
+        email: E-mail
+        contact_number: Número
+        contact_type: Tipo de contato
+        account: *account
+        account_id: *account
+        uuid: UUID
+      comment:
+        user: *user
+        user_id: *user
+        commentable_type: Tipo comentário
+        commentable_id: Comentário
+        comment: Comentário
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado por
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        uuid: UUID
+      currency_quotation:
+        currency: Moeda
+        quotation: Cotação
+        date_quotation: Data da cotação
+        updated_quotation: Cotação alterada
+        uuid: UUID
+        created_at: Criado em
+        updated_at: Alterado em
+      birthday_card:
+        account_id: *account
+        account: *account
+        uuid: UUID
+      department:
+        name: Nome
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        headquarter: *headquarter
+        headquarter_id: *headquarter
+        uuid: UUID
+      dish:
+        name: Nome
+        includes_gluten: Possui gluten
+        includes_lactose: Possui Lactose
+        includes_sugar: Possui açucar
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        uuid: UUID
+      emergency_contact:
+        name: Nome
+        phone: Telefone
+        relationship: Relação
+        user: *user
+        user_id: *user
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        headquarter: *headquarter
+        headquarter_id: *headquarter
+        uuid: UUID
+      group:
+        name: Nome
+        group_ldap: LDAP
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        group_type: Tipo do grupo
+        department: *department
+        department_id: *department
+        account: *account
+        account_id: *account
+        headquarter: *headquarter
+        headquarter_id: *headquarter
+        uuid: UUID
+      group_permission:
+        group: *group
+        group_id: *group
+        permission: *permission
+        permission_id: *permission
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      integration:
+        account: *account
+        account_id: *account
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        token: Token
+        description: Descrição
+        integration_type: Tipo da integração
+        remote_ip: IP's liberados
+        uuid: UUID
+      license_plate:
+        plate: Placa
+        user: *user
+        user_id: *user
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletedo em
+        created_at: Criado em
+        updated_at: Editado em
+      like:
+        user: *user
+        user_id: *user
+        likeable_type: Tipo da curtida
+        likeable_id: Curtida
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+      meal:
+        meal_plan: *meal_plan
+        meal_plan_id: *meal_plan
+        name: Nome
+        initial_hour: Horário de inicio
+        final_hour: Horário de fim
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        uuid: UUID
+      meal_rating:
+        account: *account
+        account_id: *account
+        meal: *meal
+        meal_id: *meal
+        rating: Avaliação
+        commentary: Comentário
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        uuid: UUID
+      meal_plan:
+        account: *account
+        account_id: *account
+        meal_plan_date: Dia
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        uuid: UUID
+      meal_plan_headquarter:
+        meal_plan: *meal_plan
+        meal_plan_id: *meal_plan
+        headquarter: *headquarter
+        headquarter_id: *headquarter
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        uuid: UUID
+      meal_dish:
+        meal: *meal
+        meal_id: *meal
+        dish: *dish
+        dish_id: *dish
+        especial_dish: Prato especial
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        uuid: UUID
+      notification:
+        title: Título
+        message: Mensagem
+        read: Lido
+        notification_type: Tipo
+        notification_origin: Origem
+        notifiable_type: Notificável
+        notifiable_id: Notificável
+        user: *user
+        user_id: *user
+        account: *account
+        account_id: *account
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      notification_token:
+        token: Token
+        mobile_type: Tipo do aparelho
+        user: *user
+        user_id: *user
+        account: *account
+        account_id: *account
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        uuid: UUID
+      poll:
+        name: Nome
+        description: Descrição
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        uuid: UUID
+      poll_option:
+        name: Nome
+        sequency: Sequência
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        uuid: UUID
+      post:
+        title: Título
+        description: Descrição
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        publish: Publicado
+        start_date: Data inicial
+        end_date: Data final
+        url: URL
+        highlight: Destaque
+        space: *space
+        space_id: *space
+        post_date: Data
+        subspace: *space
+        subspace_id: *space
+        youtube_url: Youtube link
+        account: *account
+        account_id: *account
+        uuid: UUID
+      permission:
+        account: *account
+        account_id: *account
+        name: Nome
+        code: Código
+        module_type: Tipo do módulo
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      state:
+        uf: UF
+        country: Pais
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      shift:
+        code: Código
+        name: Nome
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+      space:
+        name: Nome
+        icon: Ícone
+        icon_color: Cor do ícone
+        background_color: Cor de fundo
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        active: Ativo
+        slug: Slug
+        is_home: É ínicio
+        space_order: Sequência
+        is_tactic: É tactic
+        parent: *space
+        parent_id: *space
+        only_admin: Somente administrador
+        all_see: Todos veêm
+        all_post: Todos postam
+        space_type: Tipo
+        tool: *tool
+        tool_id: *tool
+        account: *account
+        account_id: *account
+        headquarter: *headquarter
+        headquarter_id: *headquarter
+        uuid: uuid
+      space_group:
+        can_post: Pode postar
+        space: *space
+        space_id: *space
+        group: *group
+        group_id: *group
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        uuid: UUID
+      space_widget:
+        space: *space
+        space_id: *space
+        widget: *widget
+        widget_id: *widget
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        order_index: Sequência
+        uuid: UUID
+      space_tool:
+        space: *space
+        space_id: *space
+        tool: *tool
+        tool_id: *tool
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+      tool:
+        name: Nome
+        slug: Slug
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        tool_code: Código
+        icon: Icone
+        is_chat: É chat
+        is_attendance: É atendimento
+        tool_type: Tipo
+        is_extension: É extensão
+        only_admin: Apenas administrador
+        module_type: Módulo
+        is_post_office: É correio
+        is_flat_icon: É icone flat
+        uuid: UUID
+      user:
+        provider: Devise provider
+        uid: Devise uid
+        encrypted_password: Senha criptografada
+        reset_password_token: Token para reset de senha
+        reset_password_sent_at: Reset de senha enviado em
+        sign_in_count: Quantidade de logins
+        current_sign_in_at: Login atual em
+        last_sign_in_at: Ultimo login
+        current_sign_in_ip: IP do login atual
+        last_sign_in_ip: IP do último login
+        confirmation_token: Token de confirmação
+        confirmed_at: Confirmado em
+        confirmation_sent_at: Confirmação enviada em
+        unconfirmed_email: E-mail não confirmado
+        name: Nome
+        email: E-mail
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        is_admin: É administrador
+        birthday: Aniversário
+        address: Endereço
+        license_plate: Placa
+        driver_license: CNH
+        phone: Telefone
+        cellphone: Telefone celular
+        phone_extension: Ramal
+        occupation: Ocupação
+        subsidiary: Filial
+        admission_date: Data de admissão
+        on_vacation: De férias
+        contact_person: Pessoa para contato
+        notification_token: Token de notificação
+        photo_file_name: Nome da foto
+        photo_content_type: Conteúdo da foto
+        photo_file_size: Tamanho da foto
+        photo_updated_at: Foto editada em
+        cod_emp: Código da empresa
+        cod_fil: Código da unidade
+        department_id: *department
+        department: *department
+        show_intro: Mostrar intro
+        shift_id: Turno
+        godfather_id: Padrinho
+        web_notification_token: Token de notificação web
+        access_all_purchase_orders: Acessar todas as ordens de compra
+        is_blocked: É bloqueado
+        rg: RG
+        cpf: CPF
+        password: senha
+        driver_license_photo_file_name: CNH nome da foto
+        driver_license_photo_content_type: CNH tipo da foto
+        driver_license_photo_file_size: CNH tamanho da foto
+        driver_license_photo_updated_at: CNH foto editada em
+        lunch_time_start: Inicio horário do almoço
+        lunch_time_end: Fim horário de almoço
+        work_time_start: Inicio horário de trabalho
+        work_time_end: Fim horário de trabalho
+        is_account_admin: É administrador da conta
+        num_cad: Número do cadastro
+        last_request_at: Última requisição
+        timeout_in: Deslogar em (minutos)
+        original_name: Nome original
+        dont_show_birthday: Não mostrar aniversário
+        account_id: *account
+        account: *account
+        uuid: UUID
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        allow_password_change: Liberado troca de senha
+        remember_created_at: Lembrar criado em
+        tokens: Tokens
+        headquarter_id: *headquarter
+        headquarter: *headquarter
+        integration_id: *integration
+        integration: *integration
+      user_use_term:
+        accept: Aceito
+        user: *user
+        user_id: *user
+        use_term: *use_term
+        use_term_id: *use_term
+      use_term:
+        title: Título
+        text: Texto
+        account: *account
+        account_id: *account
+        uuid: UUID
+      user_group:
+        user: *user
+        user_id: *user
+        group: *group
+        group_id: *group
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        uuid: UUID
+      headquarter:
+        name: Nome
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deleteado em
+        created_at: Criado em
+        updated_at: Editado em
+        cod_fil_erp: Código unidade ERP
+        cod_emp_erp: Código empresa ERP
+        pr_report: Relatório folha de pagamento
+        pr_sender: E-mail do remetente dos documentos
+        pr_input: Entrada folha de pagamento
+        pr_ed_report: Relatório vínculo empregatício
+        pr_ed_input: Entrada vínculo empregatício
+        pr_pr_report: Relatório registro do ponto
+        pr_pr_input: Entrada registro do ponto
+        point_mirror_report: Relatório espelho do ponto
+        point_mirror_input: Entrada espelho do ponto
+        start_point_mirror_period: Inicio periodo espelho do ponto
+        end_point_mirror_period: Fim periodo espelho do ponto
+        banked_hour_report: Relatório banco de horas
+        banked_hour_input: Entrada banco de horas
+        start_banked_hour_period: Inicio periodo banco de horas
+        end_banked_hour_period: Fim periodo banco de horas
+        vacation_balance_report: Relatório balanço de férias
+        vacation_balance_input: Entrada balanço de férias
+        vacation_warning_report: Relatório aviso de férias
+        vacation_warning_input: Entrada aviso de férias
+        vacation_receipt_report: Relatório recibo de férias
+        vacation_receipt_input: Entrada recibo de férias
+        christmas_bonus_report: Relatório décimo terceiro
+        christmas_bonus_input: Entrada décimo terceiro
+        account: *account
+        account_id: *account
+        uuid: UUID
+        social_reason: Razão social
+      web_service:
+        name: Nome
+        url_base: URL base
+        wsdl: WSDL
+        user: Usuário
+        password: Senha
+        web_service_type: Tipo
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        uuid: UUID
+      web_service_report:
+        code: Código
+        description: Descrição
+        input_variables: Variáveis de entrada
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        account: *account
+        account_id: *account
+        web_service: *web_service
+        web_service_id: *web_service
+        uuid: UUID
+      widget:
+        name: Nome
+        icon: Icone
+        widget_type: Tipo
+        created_by_id: Criado por
+        updated_by_id: Editado por
+        active: Ativo
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Editado em
+        url_api: URL Api
+        url_front: URL Front
+        cookie: Cookie
+        can_scroll: Pode rolar
+        uuid: UUID
+        account: *account
+        account_id: *account
+    errors:
+      models:
+        birthday_card:
+          attributes:
+            base:
+              image_is_not_square: Imagem deve ter sua altura e largura iguais (quadrada)
+              image_dimension_invalid: Imagem deve ter no máximo 1200px
+        account:
+          attributes:
+            uuid:
+        headquarter:
+          attributes:
+            cnpj:
+              invalid_format: CNPJ inválido
+        group:
+          attributes:
+            base:
+              unauthorized_group_type: Ação não permitida para esse tipo de grupo
+        poll:
+          attributes:
+            base:
+              not_allow_published: Não é permitido publicar enquente com menos de duas opções
+        post:
+          attributes:
+            base:
+              invalid_content_type: Formato do arquivo inválido
+              without_notify_permission: Você não possui permissão para publicação notificada no espaço informado
+              without_fixed_permission: Você não possui permissão para publicação fixada no espaço informado
+              unique_fixed: 'O espaço %{space_name} já possui uma publicação fixada'
+        space:
+          attributes:
+            base:
+              start_space_cannot_be_removed: Não é possível remover o espaço início
+        user:
+          attributes:
+            password:
+              invalid_case_format: Você precisa informar ao menos uma letra maiúscula e minúscula
+              invalid_number_format: Você precisa informar ao menos um número
+              invalid_special_character: Você precisa informar ao menos um caractere especial
+            cpf:
+              invalid_format: CPF inválido
+            base:
+              cant_have_account_or_headquarter: Usuário administrador não pode ter conta e/ou unidade;

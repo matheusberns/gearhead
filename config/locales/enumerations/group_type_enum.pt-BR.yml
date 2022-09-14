@@ -1,0 +1,8 @@
+pt-BR:
+  enumerations:
+    group_type_enum:
+      group: Grupo
+      account: Connect (automático)
+      department: Departamento (automático)
+      headquarter: Unidade (automático)
+      admin: Connect (automático)

@@ -1,0 +1,12 @@
+pt-BR:
+  enumerations:
+    web_service_type_enum:
+      vetorh_admitted: Consultar colaboradores admitidos
+      vetorh_fired: Consultar colaboradores demitidos
+      vetorh_consult: Consultar colaboradores
+      rubi_reports: Relatórios Rubi
+      ronda_reports: Relatórios Ronda
+      vetorh_cpf_consult: Consultar colaboradores pelo CPF
+      vetorh_complementary_consult: Consultar informações complementares
+      vetorh_districts_update: Consulta de distritos para atualização
+      vetorh_complementary_update: Atualizar informações complementares no Vetorh
