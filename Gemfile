@@ -14,8 +14,6 @@ gem 'pg'
 
 gem 'active_model_serializers'
 
-gem 'i18n'
-
 # Use Devise as session controller
 gem 'devise'
 gem 'devise_token_auth'
