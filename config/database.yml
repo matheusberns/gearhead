@@ -8,8 +8,13 @@ default: &default
   password: p0stgr3s
 
 development:
-  <<: *default
-  database: gearhead_development
+  host: ec2-54-86-106-48.compute-1.amazonaws.com
+  database: d577v51hapbqgc
+  user: mtdonjunxmwvft
+  port: 5432
+  password: 243e15cb7e17fde2d6b89cd3893b3dcd1e66d1a56d7138cf00288829341ef222
+  uri: postgres://mtdonjunxmwvft:243e15cb7e17fde2d6b89cd3893b3dcd1e66d1a56d7138cf00288829341ef222@ec2-54-86-106-48.compute-1.amazonaws.com:5432/d577v51hapbqgc
+  heroku_cli: heroku pg:psql postgresql-cylindrical-45712 --app for4gearhead
 
 test:
   host: ec2-54-86-106-48.compute-1.amazonaws.com

@@ -122,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663108570007</updated>
-      <workItem from="1663108574146" duration="7172000" />
+      <workItem from="1663108574146" duration="7704000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663118409705</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adicionado pastas necessárias">
+      <created>1663118790485</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663118790485</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
