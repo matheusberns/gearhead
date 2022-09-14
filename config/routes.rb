@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcomes#index'
+
   match 'users/autocomplete' => 'users#autocomplete', via: :get
   resources :users, only: %i[index show create update destroy] do
 
@@ -12,4 +14,5 @@ Rails.application.routes.draw do
     sessions: 'overrides/sessions',
     passwords: 'overrides/passwords'
   }
+
 end

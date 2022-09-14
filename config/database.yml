@@ -8,6 +8,7 @@ default: &default
   password: p0stgr3s
 
 development:
+  adapter: postgresql
   host: ec2-54-86-106-48.compute-1.amazonaws.com
   database: d577v51hapbqgc
   user: mtdonjunxmwvft
