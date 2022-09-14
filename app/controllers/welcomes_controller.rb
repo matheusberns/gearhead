@@ -1,6 +1,6 @@
 class WelcomesController < ::ApplicationController
 
   def index
-      render :action => "new"
+    render :json => { success: true }
   end
 end
