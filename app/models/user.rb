@@ -89,11 +89,6 @@ class User < ApplicationRecord
 
   validate :cpf_valid
 
-  def create_token
-    @client_id = SecureRandom.urlsafe_base64(nil, false)
-    @token = SecureRandom.urlsafe_base64(nil, false)
-  end
-
   protected
 
   def password_required?

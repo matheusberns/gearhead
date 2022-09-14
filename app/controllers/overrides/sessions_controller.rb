@@ -25,7 +25,7 @@ module Overrides
 
         yield @resource if block_given?
 
-        render json: { success: "Login com sucesso", token: @token, client_id: @client_id, data: SessionSerializer.new(@resource, root: false).serializable_hash, meta: @meta }, status: 201
+        render json: { success: "Login com sucesso", token: @token, data: Overrides::SessionSerializer.new(@resource, root: false).serializable_hash, meta: @meta }, status: 201
       elsif @resource && !(!@resource.respond_to?(:active_for_authentication?) || @resource.active_for_authentication?)
         if @resource.respond_to?(:locked_at) && @resource.locked_at
           render_create_error_account_locked

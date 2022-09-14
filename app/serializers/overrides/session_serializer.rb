@@ -2,11 +2,10 @@
 
 module Overrides
   class SessionSerializer < BaseSerializer
-    attr_accessor :name,
+    attributes :name,
                   :email,
                   :is_admin,
                   :birthday,
-                  :phone,
                   :cellphone,
                   :cpf,
                   :photo,
