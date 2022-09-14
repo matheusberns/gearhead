@@ -1,5 +1,5 @@
 default: &default
-  host: 10.1.1.11
+  host: localhost #10.1.1.11
   adapter: postgresql
   encoding: unicode
   user: postgres
