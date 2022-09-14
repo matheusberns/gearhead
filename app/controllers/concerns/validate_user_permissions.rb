@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Concerns::ValidateUserPermissions
+module ValidateUserPermissions
   extend ActiveSupport::Concern
 
   included do
