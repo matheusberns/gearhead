@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gearhead.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-    </list>
+    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663108570007</updated>
-      <workItem from="1663108574146" duration="5785000" />
+      <workItem from="1663108574146" duration="6109000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -132,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663116511669</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gemfile lock atualizado, database corrigido">
+      <created>1663117320551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663117320551</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adicionado pastas necessárias">
+      <created>1663117541942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663117541942</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionado retorno completo de usuario ao fazer login" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionado retorno completo de usuario ao fazer login" />
+    <MESSAGE value="Gemfile lock atualizado, database corrigido" />
+    <MESSAGE value="adicionado pastas necessárias" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionado pastas necessárias" />
   </component>
 </project>
