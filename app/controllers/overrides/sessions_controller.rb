@@ -26,12 +26,6 @@ module Overrides
         yield @resource if block_given?
 
         render json: { success: "Login com sucesso", token: @token, data: Overrides::SessionSerializer.new(@resource, root: false).serializable_hash, meta: @meta }, status: 201
-      elsif @resource && !(!@resource.respond_to?(:active_for_authentication?) || @resource.active_for_authentication?)
-        if @resource.respond_to?(:locked_at) && @resource.locked_at
-          render_create_error_account_locked
-        else
-          render_create_error_not_confirmed
-        end
       else
         render_create_error_bad_credentials
       end
@@ -57,10 +51,6 @@ module Overrides
 
     def render_create_error_bad_credentials
       render json: { errors: { base: @exceeded_attempts ? I18n.t('.devise_token_auth.sessions.bad_credential_exceeded_attempts') : I18n.t('.devise_token_auth.sessions.bad_credentials') } }, status: 401
-    end
-
-    def render_create_error_account_locked
-      render json: { errors: { base: I18n.t('.devise.mailer.account_lock_msg') } }, status: 401
     end
 
     def render_login_field_error
