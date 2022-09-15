@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/overrides/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/overrides/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/caxlsx.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/caxlsx.pt-BR.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/devise_token_auth.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/devise_token_auth.pt-BR.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/errors.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/errors.pt-BR.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/pt-BR.yml" afterDir="false" />
+    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/app/controllers/homepages/brands_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/enumerations/permission_code_enum.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/enumerations/permission_module_type_enum.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/autocomplete_serializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/index_serializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/show_serializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220915145000_create_brands.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -36,13 +52,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Matheus\Documents\gearhead\config\locales" />
-      <recent name="C:\Users\Matheus\Documents\gearhead\app\assets" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/app/serializers/homepages/brands" />
+      <recent name="$PROJECT_DIR$/app/enumerations" />
+      <recent name="$PROJECT_DIR$/app/controllers/homepages" />
+      <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: gearhead">
@@ -157,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663108570007</updated>
       <workItem from="1663108574146" duration="10005000" />
-      <workItem from="1663249617047" duration="1629000" />
+      <workItem from="1663249617047" duration="9234000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -215,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663119240715</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes">
+      <created>1663252895687</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663252895687</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +251,7 @@
     <MESSAGE value="adicionado retorno completo de usuario ao fazer login" />
     <MESSAGE value="Gemfile lock atualizado, database corrigido" />
     <MESSAGE value="adicionado pastas necessárias" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionado pastas necessárias" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>

@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   root 'welcomes#index'
 
+  namespace 'homepages' do
+    match 'brands/autocomplete' => 'brands#autocomplete', via: :get
+    resources :brands, only: %i[index show create update destroy]
+    match 'brands/:id/recover' => 'brands#recover', via: %i[put patch]
+  end
   match 'users/autocomplete' => 'users#autocomplete', via: :get
   resources :users, only: %i[index show create update destroy] do
 

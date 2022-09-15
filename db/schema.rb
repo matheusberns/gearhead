@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_13_143908) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_15_145000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -43,6 +43,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_13_143908) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "brands", force: :cascade do |t|
+    t.string "name", limit: 255
+    t.bigint "created_by_id"
+    t.bigint "updated_by_id"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["created_by_id"], name: "index_brands_on_created_by_id"
+    t.index ["deleted_at"], name: "index_brands_on_deleted_at"
+    t.index ["name"], name: "index_brands_on_name"
+    t.index ["updated_by_id"], name: "index_brands_on_updated_by_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -90,4 +103,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_13_143908) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "brands", "users", column: "created_by_id"
+  add_foreign_key "brands", "users", column: "updated_by_id"
 end
