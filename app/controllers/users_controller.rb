@@ -3,7 +3,7 @@
 class UsersController < ::ApiController
   include CheckCurrentPassword
   include PasswordChangeManageTokens
-  before_action :validate_permission, except: :autocomplete
+  before_action :validate_permission, except: %i[:autocomplete :create]
   before_action :validate_current_password, only: :update
   before_action :set_user, only: %i[show update destroy images]
 

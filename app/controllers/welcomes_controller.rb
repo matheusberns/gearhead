@@ -1,4 +1,4 @@
-class WelcomesController < ActionController::API #::ApplicationController
+class WelcomesController < ::ApplicationController
 
   def index
     render :json => { success: true }
