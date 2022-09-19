@@ -1,5 +1,0 @@
-pt-BR:
-  enumerations:
-    token_type_enum:
-      houston: Houston (iOS)
-      firebase: Firebase (Web/Android)

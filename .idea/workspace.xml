@@ -4,16 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/app/controllers/homepages/brands_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/enumerations/permission_code_enum.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/enumerations/permission_module_type_enum.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/autocomplete_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/index_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers/homepages/brands/show_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220915145000_create_brands.rb" afterDir="false" />
+    <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/enumerations/brand_type_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/homepages/models_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/enumerations/brand_type_enum.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220918233928_create_models.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220919000235_load_data_to_models.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/homepages/brands_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/enumerations/sex_enum.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/brand.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/model.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/contact_type_enum.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/enumerations/brand_type_enum.pt-BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/currency_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/group_type_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/layout_space_bar_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/permission_module_type_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/poll_status_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/solicitation_status_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/space_type_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/token_type_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/web_service_type_enum.pt-BR.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/widget_type_enum.pt-BR.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220915145000_create_brands.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,20 +61,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Matheus/dev/gearhead/app/enumerations",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matheus\dev\gearhead\app\enumerations" />
+      <recent name="C:\Users\Matheus\dev\gearhead\app\controllers\enumerations" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/app/serializers/homepages/brands" />
       <recent name="$PROJECT_DIR$/app/enumerations" />
-      <recent name="$PROJECT_DIR$/app/controllers/homepages" />
-      <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: gearhead">
@@ -177,6 +191,11 @@
       <updated>1663108570007</updated>
       <workItem from="1663108574146" duration="10005000" />
       <workItem from="1663249617047" duration="9234000" />
+      <workItem from="1663368074306" duration="413000" />
+      <workItem from="1663433994114" duration="750000" />
+      <workItem from="1663464633864" duration="1773000" />
+      <workItem from="1663514436010" duration="689000" />
+      <workItem from="1663541638415" duration="9364000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -241,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663252895687</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changes">
+      <created>1663368267886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663368267886</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

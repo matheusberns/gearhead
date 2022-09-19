@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
   root 'welcomes#index'
 
-  namespace 'homepages' do
-    match 'brands/autocomplete' => 'brands#autocomplete', via: :get
+  namespace :enumerations do
+    resources :brand_type, only: %i[index show]
   end
+
+  match 'models/autocomplete' => 'homepages/models#autocomplete', via: :get
+
   match 'users/autocomplete' => 'users#autocomplete', via: :get
   resources :users, only: %i[index show create update destroy] do
 

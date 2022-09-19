@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-class Brand < ApplicationRecord
+class Model < ApplicationRecord
   # Concerns
 
   # Active storage
 
   # Enumerations
+  has_enumeration_for :brand_type, with: ::BrandTypeEnum
 
   # Belongs associations
 
   # Has_many associations
-  # has_many :posts, class_name: '::Post', inverse_of: :brand, foreign_key: :brand_id
 
   # Many-to-many associations
 
@@ -26,6 +26,7 @@ class Brand < ApplicationRecord
     select(:id, :name)
   }
   scope :by_search, ->(search) { by_name(search) }
+  scope :by_brand_type, ->(brand_type) { where(brand_type: brand_type) }
   scope :by_name, lambda { |name|
     where("UNACCENT(#{table_name}.name) ILIKE :name",
           name: "%#{I18n.transliterate(name)}%")
