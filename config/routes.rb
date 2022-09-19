@@ -1,18 +1,21 @@
 Rails.application.routes.draw do
   root 'welcomes#index'
 
-  namespace :enumerations do
-    resources :brand_type, only: %i[index show]
+  scope module: :homepages do
+    match 'models/autocomplete' => 'models#autocomplete', via: :get
   end
 
-  match 'models/autocomplete' => 'homepages/models#autocomplete', via: :get
+  # Load others routes files
+  draw(:admin)
+  draw(:current_user)
+  draw(:enumeration)
 
-  match 'users/autocomplete' => 'users#autocomplete', via: :get
-  resources :users, only: %i[index show create update destroy] do
+  # Regions
+  resources :states, controller: 'regions/states', only: :index
+  resources :cities, controller: 'regions/cities', only: :index
 
-  end
-  match 'users/:id/recover' => 'users#recover', via: %i[put patch]
-  match 'users/:id/images' => 'users#images', via: %i[put patch]
+  # Cable
+  mount ActionCable.server => '/cable'
 
   # Devise overrides
   mount_devise_token_auth_for 'User', at: 'auth', controllers: {
@@ -20,5 +23,4 @@ Rails.application.routes.draw do
     sessions: 'overrides/sessions',
     passwords: 'overrides/passwords'
   }
-
 end
