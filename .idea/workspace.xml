@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a0c66a2-d25a-43c9-a205-d46aeb380890" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/enumerations/brand_type_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/homepages/models_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/enumerations/brand_type_enum.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220918233928_create_models.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220919000235_load_data_to_models.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homepages/brands_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/enumerations/sex_enum.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/brand.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/contact_type_enum.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/enumerations/brand_type_enum.pt-BR.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/currency_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/group_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/layout_space_bar_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/permission_module_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/poll_status_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/solicitation_status_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/space_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/token_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/web_service_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/enumerations/widget_type_enum.pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220915145000_create_brands.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,18 +43,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Matheus/dev/gearhead/app/enumerations",
+    "last_opened_file_path": "C:/Users/Matheus/dev/gearhead/config/routes",
     "ruby.rails.projectView.checked": "true",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matheus\dev\gearhead\config\routes" />
+      <recent name="C:\Users\Matheus\dev\gearhead\config" />
       <recent name="C:\Users\Matheus\dev\gearhead\app\enumerations" />
       <recent name="C:\Users\Matheus\dev\gearhead\app\controllers\enumerations" />
       <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/app/serializers/homepages/brands" />
-      <recent name="$PROJECT_DIR$/app/enumerations" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: gearhead">
@@ -195,7 +174,7 @@
       <workItem from="1663433994114" duration="750000" />
       <workItem from="1663464633864" duration="1773000" />
       <workItem from="1663514436010" duration="689000" />
-      <workItem from="1663541638415" duration="9364000" />
+      <workItem from="1663541638415" duration="10994000" />
     </task>
     <task id="LOCAL-00001" summary="adicionado retorno completo de usuario ao fazer login">
       <created>1663116511668</created>
@@ -267,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663368267886</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ajuste na disposição e orientação das rotas">
+      <created>1663555151671</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663555151671</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +264,7 @@
     <MESSAGE value="Gemfile lock atualizado, database corrigido" />
     <MESSAGE value="adicionado pastas necessárias" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="ajuste na disposição e orientação das rotas" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste na disposição e orientação das rotas" />
   </component>
 </project>

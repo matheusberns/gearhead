@@ -7,10 +7,6 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-*
-
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -25,11 +21,28 @@
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
-/tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
-
-/public/assets
+.byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore coverage directory
+/coverage
+
+# Ignore .idea files.
+/.idea
+
+# Ignore meal ratings files.
+/public/ratings/*
+!/public/ratings/.keep
+
+# Ignore Gemfile.lock
+/Gemfile.lock
+
+# Ignore database schema
+/db/schema.rb
+/config/credentials/production.key
+
+/config/credentials/sandbox.key
+
+rails
