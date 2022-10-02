@@ -93,6 +93,19 @@ class User < ApplicationRecord
     is_admin
   end
 
+  def keep_current_token(current_token)
+    tokens.keep_if { |key| key == current_token }
+    save!
+  end
+
+  def remove_all_tokens
+    update_columns(tokens: {})
+  end
+
+  def active_directory?
+    username.present?
+  end
+
   protected
 
   def password_required?
