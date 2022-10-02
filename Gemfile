@@ -12,76 +12,88 @@ gem "sprockets-rails"
 # Use PostgreSQL as the database for Active Record
 gem 'pg'
 
-gem 'active_model_serializers'
+# Use Puma as the app server
+gem 'puma', '~> 4.1'
 
-# Use Devise as session controller
-gem 'devise'
+# Use Active Storage variant
+gem 'image_processing', '~> 1.2'
+gem 'mini_magick'
+
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.4.2', require: false
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors'
+
+# Rack middleware for blocking & throttling.
+gem 'rack-attack'
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  gem 'database_cleaner-active_record'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+
+  gem 'rubocop', require: false
+  gem 'simplecov', require: false
+end
+
+group :development do
+  gem 'listen', '~> 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+# Token based authentication for Rails JSON APIs.
+gem 'devise', '~> 4.8.0'
 gem 'devise_token_auth'
-
-# Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
 
 # Enumerations for Ruby with some magic powers!
 gem 'enumerate_it'
 
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+# A lightning fast JSON:API serializer for Ruby Objects.
+gem 'active_model_serializers'
 
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+# Pagination library.
+gem 'will_paginate'
+
+# Makes http fun again! Ain't no party like a httparty, because a httparty don't stop.
+gem 'httparty'
+
+# Rollbar is a real-time exception reporting service for Ruby and other languages.
+gem 'rollbar'
+
+# The New Relic Ruby agent monitors your applications
+gem 'newrelic_rpm'
 
 # This gem does some CPF/CNPJ magic. It allows you to create, validate and format CPF/CNPJ, even through the command-line
 gem 'cpf_cnpj'
 
-# Activesupport
-gem 'activesupport'
+# Resque-scheduler is an extension to Resque that adds support for queueing items in the future.
+gem 'resque-scheduler'
 
-# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+# TimeDifference is the missing Ruby method to calculate difference between two given time.
+gem 'time_difference'
 
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+# Heavy metal SOAP client
+gem 'savon', '~> 2.12.0'
 
-# Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+# The PDF::Reader library implements a PDF parser conforming as much as possible to the PDF specification from Adobe.
+gem 'pdf-reader', '~> 1.4'
 
-# Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
-# gem "kredis"
+# Community Axlsx is an Office Open XML Spreadsheet generator for the Ruby programming language.
+gem 'caxlsx'
 
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+# Houston is a simple gem for sending Apple Push Notifications. Pass your credentials, construct your message, and send it.
+gem 'houston'
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
-
-# Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
-
-# Use Sass to process CSS
-# gem "sassc-rails"
-
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
-
-group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-end
-
-group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
-
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
-end
-
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
-end
+# Net::LDAP for Ruby (also called net-ldap) implements client access for the Lightweight Directory Access Protocol (LDAP)
+gem 'net-ldap'

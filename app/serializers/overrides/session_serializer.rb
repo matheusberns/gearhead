@@ -9,27 +9,7 @@ module Overrides
                   :cellphone,
                   :cpf,
                   :photo,
-                  :created_by,
-                  :updated_by,
                   :permissions
-
-    def created_by
-      return unless object.created_by_id
-
-      {
-        id: object.created_by_id,
-        name: object.created_by_name
-      }
-    end
-
-    def updated_by
-      return unless object.updated_by_id
-
-      {
-        id: object.updated_by_id,
-        name: object.updated_by_name
-      }
-    end
 
     def birthday
       object.birthday&.to_time&.iso8601

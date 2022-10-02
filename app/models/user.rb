@@ -102,10 +102,6 @@ class User < ApplicationRecord
     update_columns(tokens: {})
   end
 
-  def active_directory?
-    username.present?
-  end
-
   protected
 
   def password_required?
