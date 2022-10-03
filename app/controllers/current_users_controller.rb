@@ -54,7 +54,6 @@ class CurrentUsersController < ::ApiController
     params
       .require(:user)
       .permit(:name,
-              :last_name,
               :nickname,
               :email,
               :cpf,
