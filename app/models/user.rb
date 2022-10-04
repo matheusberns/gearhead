@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   include DeviseTokenAuth::Concerns::User
 
+  # encrypts :cpf
+
   # Accessors
 
   # Concerns

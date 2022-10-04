@@ -7,9 +7,9 @@ module Overrides
                   :is_admin,
                   :birthday,
                   :cellphone,
+                  :nickname,
                   :cpf,
-                  :photo,
-                  :permissions
+                  :photo
 
     def birthday
       object.birthday&.to_time&.iso8601
@@ -23,7 +23,7 @@ module Overrides
       object.photo_dimensions
     end
 
-    def permissions
+    # def permissions
       # object.group_permissions.uniq.map do |group_permission|
       #   {
       #     id: group_permission.permission.id,
@@ -32,6 +32,6 @@ module Overrides
       #     code: group_permission.permission.code
       #   }
       # end
-    end
+    # end
   end
 end

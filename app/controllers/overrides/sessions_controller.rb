@@ -11,8 +11,6 @@ module Overrides
 
       @resource = find_active_devise_resource
 
-      render_account_not_found_error and return unless Rails.env.development? || @resource&.administrator?
-
       if valid_devise_resource? || valid_active_directory_resource?
         return render_create_error_bad_credentials if not_login_valid?
 
