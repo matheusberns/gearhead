@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_02_185958) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_03_021540) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -78,7 +78,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_02_185958) do
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
     t.string "name"
-    t.string "last_name"
     t.string "nickname"
     t.string "email", limit: 60
     t.date "birthday"
