@@ -14,6 +14,20 @@ class UsersController < ::ApiController
     end
   end
 
+  def password_recovery
+    @user = User.by_cpf(params[:user][:cpf]).by_email(params[:user][:email])
+
+    unless @user
+      return render_errors_json('Usuário não encontrado')
+    end
+
+    if @user.password_recovery
+      render_show_json(@user, Users::ShowSerializer, 'user', 201)
+    else
+      render_errors_json(@user.errors.messages)
+    end
+  end
+
   private
 
   def user_params

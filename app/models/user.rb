@@ -50,7 +50,8 @@ class User < ApplicationRecord
   scope :by_email, ->(email) { where("UNACCENT(#{table_name}.email) ILIKE UNACCENT(:email)", email: "%#{email}%") }
 
   # Callbacks
-  before_validation :set_uid
+  before_validation :set_provider,
+                    :set_uid
   before_validation :format_cpf
 
   # Validations
@@ -60,34 +61,55 @@ class User < ApplicationRecord
   }
   validates_uniqueness_of :email,
                           allow_blank: true,
-                          conditions: -> { where(active: true, deleted_at: nil) }
+                          conditions: -> { where(active: true, deleted_at: nil)
+                          }
   validates_format_of :email,
                       with: /\A[^@\s]+@[^@\s]+\z/,
                       allow_blank: true,
                       if: :email_changed?
-
   validates_uniqueness_of :uid,
                           scope: :provider,
-                          conditions: -> { where(active: true, deleted_at: nil) }
-
+                          conditions: -> { where(active: true, deleted_at: nil)
+                          }
   validates_confirmation_of :password, if: :password_required?
   validates_format_of :password,
                       with: /(?=.*[a-z])(?=.*[A-Z])/,
                       message: :invalid_case_format,
-                      if: -> { password.present? }
+                      if: -> { password.present?
+                      }
   validates_format_of :password,
                       with: /(?=.*[0-9])/,
                       message: :invalid_number_format,
-                      if: -> { password.present? }
+                      if: -> { password.present?
+                      }
   validates_format_of :password,
                       with: /(?=.*[^A-Za-z0-9])/,
                       message: :invalid_special_character,
-                      if: -> { password.present? }
-
+                      if: -> { password.present?
+                      }
   validates_uniqueness_of :uuid
   validates :name, presence: true, length: { maximum: 255 }
-
   validate :cpf_valid
+
+  def password_recovery
+    params = { redirect_url: "#{WEB_BASE_URL}/alterar-senha", config_name: 'default' }
+    @client_config = params[:config_name]
+
+    @redirect_url = params.fetch(
+      :redirect_url,
+      DeviseTokenAuth.default_password_reset_url
+    )
+
+    ActionMailer::Base.default_url_options[:host] = API_BASE_URL
+
+    send_reset_password_instructions(
+      email: email,
+      provider: 'email',
+      redirect_url: @redirect_url,
+      authkey: AUTH_KEY,
+      client_config: params[:config_name]
+    )
+  end
 
   def administrator?
     is_admin
@@ -122,4 +144,19 @@ class User < ApplicationRecord
     cpf&.remove!(/\W/)
   end
 
+  def set_provider
+    self.provider = if email_without_cpf?
+                      'email'
+                    else
+                      'cpf'
+                    end
+  end
+
+  def cpf_without_email?
+    cpf.present? && email.blank?
+  end
+
+  def email_without_cpf?
+    email.present? && cpf.blank?
+  end
 end
