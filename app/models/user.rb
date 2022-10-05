@@ -94,7 +94,7 @@ class User < ApplicationRecord
   validate :cpf_valid
 
   def password_recovery
-    params = { redirect_url: "#{WEB_BASE_URL}/alterar-senha", config_name: 'default' }
+    params = { redirect_url: "#{API_BASE_URL}/alterar-senha", config_name: 'default' }
     @client_config = params[:config_name]
 
     @redirect_url = params.fetch(

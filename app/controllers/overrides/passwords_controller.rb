@@ -15,23 +15,18 @@ module Overrides
 
       if @resource
         yield @resource if block_given?
-        if @resource.account.try(:smtp_email)
-          @resource.send_reset_password_instructions(
-            email: @email,
-            provider: 'email',
-            redirect_url: @redirect_url,
-            authkey: AUTH_KEY,
-            client_config: params[:config_name]
-          )
+        @resource.send_reset_password_instructions(
+          email: @email,
+          provider: 'email',
+          redirect_url: @redirect_url,
+          authkey: AUTH_KEY,
+          client_config: params[:config_name]
+        )
 
-          if @resource.errors.empty?
-            render_success_json
-          else
-            render_create_error @resource.errors
-          end
-
+        if @resource.errors.empty?
+          render_success_json
         else
-          render_config_not_found
+          render_create_error @resource.errors
         end
       else
         render_not_found_error

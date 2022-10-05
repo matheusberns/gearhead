@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_03_021540) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_05_005635) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -58,6 +58,56 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_021540) do
     t.index ["deleted_at"], name: "index_models_on_deleted_at"
     t.index ["name"], name: "index_models_on_name"
     t.index ["updated_by_id"], name: "index_models_on_updated_by_id"
+  end
+
+  create_table "optionals", force: :cascade do |t|
+    t.string "name", limit: 50
+    t.uuid "uuid", default: -> { "uuid_generate_v4()" }, null: false
+    t.bigint "created_by_id"
+    t.bigint "updated_by_id"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["created_by_id"], name: "index_optionals_on_created_by_id"
+    t.index ["deleted_at"], name: "index_optionals_on_deleted_at"
+    t.index ["updated_by_id"], name: "index_optionals_on_updated_by_id"
+    t.index ["uuid"], name: "index_optionals_on_uuid"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "title", limit: 90, null: false
+    t.text "description", null: false
+    t.integer "brand_type", null: false
+    t.datetime "model_year", null: false
+    t.integer "gearbox_type"
+    t.integer "fuel_type"
+    t.integer "steering_type"
+    t.boolean "with_gnv"
+    t.boolean "vehicle_type"
+    t.integer "mileage"
+    t.integer "door_type"
+    t.integer "end_plate_type"
+    t.integer "color_type"
+    t.boolean "accept_exchange"
+    t.string "cep"
+    t.integer "category_type"
+    t.float "price"
+    t.uuid "uuid", default: -> { "uuid_generate_v4()" }, null: false
+    t.bigint "model_id"
+    t.bigint "created_by_id"
+    t.bigint "updated_by_id"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["brand_type"], name: "index_posts_on_brand_type"
+    t.index ["created_by_id"], name: "index_posts_on_created_by_id"
+    t.index ["deleted_at"], name: "index_posts_on_deleted_at"
+    t.index ["description"], name: "index_posts_on_description"
+    t.index ["model_id"], name: "index_posts_on_model_id"
+    t.index ["model_year"], name: "index_posts_on_model_year"
+    t.index ["title"], name: "index_posts_on_title"
+    t.index ["updated_by_id"], name: "index_posts_on_updated_by_id"
+    t.index ["uuid"], name: "index_posts_on_uuid"
   end
 
   create_table "users", force: :cascade do |t|
@@ -108,4 +158,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_021540) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "models", "users", column: "created_by_id"
   add_foreign_key "models", "users", column: "updated_by_id"
+  add_foreign_key "optionals", "users", column: "created_by_id"
+  add_foreign_key "optionals", "users", column: "updated_by_id"
+  add_foreign_key "posts", "models"
+  add_foreign_key "posts", "users", column: "created_by_id"
+  add_foreign_key "posts", "users", column: "updated_by_id"
 end
